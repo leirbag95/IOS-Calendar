@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71622FD2C4B7EA1E2E1DBFBA /* Pods_ModuleAgandaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E2A8658B36A97FDFDBF4B7 /* Pods_ModuleAgandaTests.framework */; };
+		731963732174819100D06504 /* CalendarDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731963722174819100D06504 /* CalendarDetailTableViewController.swift */; };
+		731A667A216377B2004A25DC /* CalendarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A6679216377B2004A25DC /* CalendarMonthView.swift */; };
+		731A667C21637B5C004A25DC /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A667B21637B5C004A25DC /* CustomCell.swift */; };
+		731A66802163ACF0004A25DC /* CalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A667F2163ACF0004A25DC /* CalendarWeekView.swift */; };
+		731A66822163ACFB004A25DC /* CustomCellWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A66812163ACFB004A25DC /* CustomCellWeek.swift */; };
+		7333DD8B216C93C800477D99 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333DD8A216C93C800477D99 /* Event.swift */; };
+		7333DD8D216CB20600477D99 /* CurrentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333DD8C216CB20600477D99 /* CurrentValue.swift */; };
+		73386857216B472A0057A546 /* CalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73386856216B472A0057A546 /* CalendarDayView.swift */; };
+		7351C54021636FC4005825AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C53F21636FC4005825AC /* AppDelegate.swift */; };
+		7351C54221636FC4005825AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C54121636FC4005825AC /* ViewController.swift */; };
+		7351C54521636FC4005825AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7351C54321636FC4005825AC /* Main.storyboard */; };
+		7351C54721636FC5005825AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7351C54621636FC5005825AC /* Assets.xcassets */; };
+		7351C54A21636FC5005825AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7351C54821636FC5005825AC /* LaunchScreen.storyboard */; };
+		7351C55521636FC5005825AC /* ModuleAgandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C55421636FC5005825AC /* ModuleAgandaTests.swift */; };
+		7351C56021636FC5005825AC /* ModuleAgandaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C55F21636FC5005825AC /* ModuleAgandaUITests.swift */; };
+		73870753216B68840033181B /* AddEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73870752216B68840033181B /* AddEventTableViewController.swift */; };
+		7387075C216BA0D70033181B /* CustomDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387075B216BA0D70033181B /* CustomDayCell.swift */; };
+		86E57E6B56B946DACD065FC6 /* Pods_ModuleAganda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3736A6FF66B0B12EAA73FAF /* Pods_ModuleAganda.framework */; };
+		AFA011E33AD2A3899F2B07F4 /* Pods_ModuleAgandaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C641C7337B253B921594E25 /* Pods_ModuleAgandaUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7351C55121636FC5005825AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7351C53421636FC4005825AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7351C53B21636FC4005825AC;
+			remoteInfo = ModuleAganda;
+		};
+		7351C55C21636FC5005825AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7351C53421636FC4005825AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7351C53B21636FC4005825AC;
+			remoteInfo = ModuleAganda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11901FFD056B8BB6B42A08E2 /* Pods-ModuleAganda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAganda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda.debug.xcconfig"; sourceTree = "<group>"; };
+		417544A9BBC587A268B41FBB /* Pods-ModuleAgandaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAgandaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAgandaTests/Pods-ModuleAgandaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		731963722174819100D06504 /* CalendarDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDetailTableViewController.swift; sourceTree = "<group>"; };
+		731A6679216377B2004A25DC /* CalendarMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonthView.swift; sourceTree = "<group>"; };
+		731A667B21637B5C004A25DC /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		731A667F2163ACF0004A25DC /* CalendarWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWeekView.swift; sourceTree = "<group>"; };
+		731A66812163ACFB004A25DC /* CustomCellWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellWeek.swift; sourceTree = "<group>"; };
+		7333DD8A216C93C800477D99 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7333DD8C216CB20600477D99 /* CurrentValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValue.swift; sourceTree = "<group>"; };
+		73386856216B472A0057A546 /* CalendarDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayView.swift; sourceTree = "<group>"; };
+		7351C53C21636FC4005825AC /* ModuleAganda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleAganda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7351C53F21636FC4005825AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7351C54121636FC4005825AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7351C54421636FC4005825AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7351C54621636FC5005825AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7351C54921636FC5005825AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7351C54B21636FC5005825AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7351C55021636FC5005825AC /* ModuleAgandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleAgandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7351C55421636FC5005825AC /* ModuleAgandaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAgandaTests.swift; sourceTree = "<group>"; };
+		7351C55621636FC5005825AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7351C55B21636FC5005825AC /* ModuleAgandaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleAgandaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7351C55F21636FC5005825AC /* ModuleAgandaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAgandaUITests.swift; sourceTree = "<group>"; };
+		7351C56121636FC5005825AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73870752216B68840033181B /* AddEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventTableViewController.swift; sourceTree = "<group>"; };
+		7387075B216BA0D70033181B /* CustomDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDayCell.swift; sourceTree = "<group>"; };
+		7C641C7337B253B921594E25 /* Pods_ModuleAgandaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleAgandaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E2A8658B36A97FDFDBF4B7 /* Pods_ModuleAgandaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleAgandaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CC6EA413B438EC8532AD7F /* Pods-ModuleAgandaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAgandaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAgandaUITests/Pods-ModuleAgandaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3736A6FF66B0B12EAA73FAF /* Pods_ModuleAganda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleAganda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1DF17F37EB5F0370B550F4 /* Pods-ModuleAgandaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAgandaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAgandaTests/Pods-ModuleAgandaTests.release.xcconfig"; sourceTree = "<group>"; };
+		ABEA1CE69E114AD36A514319 /* Pods-ModuleAgandaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAgandaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAgandaUITests/Pods-ModuleAgandaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD8064F6506F1FED488B1043 /* Pods-ModuleAganda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAganda.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7351C53921636FC4005825AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E57E6B56B946DACD065FC6 /* Pods_ModuleAganda.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7351C54D21636FC5005825AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71622FD2C4B7EA1E2E1DBFBA /* Pods_ModuleAgandaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7351C55821636FC5005825AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA011E33AD2A3899F2B07F4 /* Pods_ModuleAgandaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		723BBB7882B17E2C09F5AF3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3736A6FF66B0B12EAA73FAF /* Pods_ModuleAganda.framework */,
+				87E2A8658B36A97FDFDBF4B7 /* Pods_ModuleAgandaTests.framework */,
+				7C641C7337B253B921594E25 /* Pods_ModuleAgandaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		731A667D21637B67004A25DC /* Month */ = {
+			isa = PBXGroup;
+			children = (
+				731A6679216377B2004A25DC /* CalendarMonthView.swift */,
+				731A667B21637B5C004A25DC /* CustomCell.swift */,
+			);
+			path = Month;
+			sourceTree = "<group>";
+		};
+		731A667E2163AC7D004A25DC /* Week */ = {
+			isa = PBXGroup;
+			children = (
+				731A667F2163ACF0004A25DC /* CalendarWeekView.swift */,
+				731A66812163ACFB004A25DC /* CustomCellWeek.swift */,
+			);
+			path = Week;
+			sourceTree = "<group>";
+		};
+		73386855216B47090057A546 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				73870754216B80BC0033181B /* Model */,
+				73386856216B472A0057A546 /* CalendarDayView.swift */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		7351C53321636FC4005825AC = {
+			isa = PBXGroup;
+			children = (
+				7351C53E21636FC4005825AC /* ModuleAganda */,
+				7351C55321636FC5005825AC /* ModuleAgandaTests */,
+				7351C55E21636FC5005825AC /* ModuleAgandaUITests */,
+				7351C53D21636FC4005825AC /* Products */,
+				9659D3507D96AEEADCA58EFA /* Pods */,
+				723BBB7882B17E2C09F5AF3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7351C53D21636FC4005825AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7351C53C21636FC4005825AC /* ModuleAganda.app */,
+				7351C55021636FC5005825AC /* ModuleAgandaTests.xctest */,
+				7351C55B21636FC5005825AC /* ModuleAgandaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7351C53E21636FC4005825AC /* ModuleAganda */ = {
+			isa = PBXGroup;
+			children = (
+				73870752216B68840033181B /* AddEventTableViewController.swift */,
+				7333DD8C216CB20600477D99 /* CurrentValue.swift */,
+				7333DD8A216C93C800477D99 /* Event.swift */,
+				731A667D21637B67004A25DC /* Month */,
+				73386855216B47090057A546 /* Day */,
+				731A667E2163AC7D004A25DC /* Week */,
+				7351C53F21636FC4005825AC /* AppDelegate.swift */,
+				7351C54121636FC4005825AC /* ViewController.swift */,
+				7351C54321636FC4005825AC /* Main.storyboard */,
+				7351C54621636FC5005825AC /* Assets.xcassets */,
+				7351C54821636FC5005825AC /* LaunchScreen.storyboard */,
+				7351C54B21636FC5005825AC /* Info.plist */,
+			);
+			path = ModuleAganda;
+			sourceTree = "<group>";
+		};
+		7351C55321636FC5005825AC /* ModuleAgandaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7351C55421636FC5005825AC /* ModuleAgandaTests.swift */,
+				7351C55621636FC5005825AC /* Info.plist */,
+			);
+			path = ModuleAgandaTests;
+			sourceTree = "<group>";
+		};
+		7351C55E21636FC5005825AC /* ModuleAgandaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7351C55F21636FC5005825AC /* ModuleAgandaUITests.swift */,
+				7351C56121636FC5005825AC /* Info.plist */,
+			);
+			path = ModuleAgandaUITests;
+			sourceTree = "<group>";
+		};
+		73870754216B80BC0033181B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7387075B216BA0D70033181B /* CustomDayCell.swift */,
+				731963722174819100D06504 /* CalendarDetailTableViewController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9659D3507D96AEEADCA58EFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11901FFD056B8BB6B42A08E2 /* Pods-ModuleAganda.debug.xcconfig */,
+				FD8064F6506F1FED488B1043 /* Pods-ModuleAganda.release.xcconfig */,
+				417544A9BBC587A268B41FBB /* Pods-ModuleAgandaTests.debug.xcconfig */,
+				AA1DF17F37EB5F0370B550F4 /* Pods-ModuleAgandaTests.release.xcconfig */,
+				92CC6EA413B438EC8532AD7F /* Pods-ModuleAgandaUITests.debug.xcconfig */,
+				ABEA1CE69E114AD36A514319 /* Pods-ModuleAgandaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7351C53B21636FC4005825AC /* ModuleAganda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7351C56421636FC5005825AC /* Build configuration list for PBXNativeTarget "ModuleAganda" */;
+			buildPhases = (
+				84DE638E46A07A4AE540BA8B /* [CP] Check Pods Manifest.lock */,
+				7351C53821636FC4005825AC /* Sources */,
+				7351C53921636FC4005825AC /* Frameworks */,
+				7351C53A21636FC4005825AC /* Resources */,
+				8F8831F0FD800715DD3779DF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModuleAganda;
+			productName = ModuleAganda;
+			productReference = 7351C53C21636FC4005825AC /* ModuleAganda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7351C54F21636FC5005825AC /* ModuleAgandaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7351C56721636FC5005825AC /* Build configuration list for PBXNativeTarget "ModuleAgandaTests" */;
+			buildPhases = (
+				A0B5CF84CB2FDE459F4B442B /* [CP] Check Pods Manifest.lock */,
+				7351C54C21636FC5005825AC /* Sources */,
+				7351C54D21636FC5005825AC /* Frameworks */,
+				7351C54E21636FC5005825AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7351C55221636FC5005825AC /* PBXTargetDependency */,
+			);
+			name = ModuleAgandaTests;
+			productName = ModuleAgandaTests;
+			productReference = 7351C55021636FC5005825AC /* ModuleAgandaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7351C55A21636FC5005825AC /* ModuleAgandaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7351C56A21636FC5005825AC /* Build configuration list for PBXNativeTarget "ModuleAgandaUITests" */;
+			buildPhases = (
+				8BC2C88F1996DF21D34CD88E /* [CP] Check Pods Manifest.lock */,
+				7351C55721636FC5005825AC /* Sources */,
+				7351C55821636FC5005825AC /* Frameworks */,
+				7351C55921636FC5005825AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7351C55D21636FC5005825AC /* PBXTargetDependency */,
+			);
+			name = ModuleAgandaUITests;
+			productName = ModuleAgandaUITests;
+			productReference = 7351C55B21636FC5005825AC /* ModuleAgandaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7351C53421636FC4005825AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Gabriel Elfassi";
+				TargetAttributes = {
+					7351C53B21636FC4005825AC = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					7351C54F21636FC5005825AC = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 7351C53B21636FC4005825AC;
+					};
+					7351C55A21636FC5005825AC = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 7351C53B21636FC4005825AC;
+					};
+				};
+			};
+			buildConfigurationList = 7351C53721636FC4005825AC /* Build configuration list for PBXProject "ModuleAganda" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7351C53321636FC4005825AC;
+			productRefGroup = 7351C53D21636FC4005825AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7351C53B21636FC4005825AC /* ModuleAganda */,
+				7351C54F21636FC5005825AC /* ModuleAgandaTests */,
+				7351C55A21636FC5005825AC /* ModuleAgandaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7351C53A21636FC4005825AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7351C54A21636FC5005825AC /* LaunchScreen.storyboard in Resources */,
+				7351C54721636FC5005825AC /* Assets.xcassets in Resources */,
+				7351C54521636FC4005825AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7351C54E21636FC5005825AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7351C55921636FC5005825AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84DE638E46A07A4AE540BA8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModuleAganda-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC2C88F1996DF21D34CD88E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModuleAgandaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F8831F0FD800715DD3779DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0B5CF84CB2FDE459F4B442B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ModuleAgandaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7351C53821636FC4005825AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73386857216B472A0057A546 /* CalendarDayView.swift in Sources */,
+				731A66802163ACF0004A25DC /* CalendarWeekView.swift in Sources */,
+				731963732174819100D06504 /* CalendarDetailTableViewController.swift in Sources */,
+				73870753216B68840033181B /* AddEventTableViewController.swift in Sources */,
+				731A667A216377B2004A25DC /* CalendarMonthView.swift in Sources */,
+				7333DD8B216C93C800477D99 /* Event.swift in Sources */,
+				7333DD8D216CB20600477D99 /* CurrentValue.swift in Sources */,
+				7351C54221636FC4005825AC /* ViewController.swift in Sources */,
+				731A667C21637B5C004A25DC /* CustomCell.swift in Sources */,
+				731A66822163ACFB004A25DC /* CustomCellWeek.swift in Sources */,
+				7387075C216BA0D70033181B /* CustomDayCell.swift in Sources */,
+				7351C54021636FC4005825AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7351C54C21636FC5005825AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7351C55521636FC5005825AC /* ModuleAgandaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7351C55721636FC5005825AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7351C56021636FC5005825AC /* ModuleAgandaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7351C55221636FC5005825AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7351C53B21636FC4005825AC /* ModuleAganda */;
+			targetProxy = 7351C55121636FC5005825AC /* PBXContainerItemProxy */;
+		};
+		7351C55D21636FC5005825AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7351C53B21636FC4005825AC /* ModuleAganda */;
+			targetProxy = 7351C55C21636FC5005825AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7351C54321636FC4005825AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7351C54421636FC4005825AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7351C54821636FC5005825AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7351C54921636FC5005825AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7351C56221636FC5005825AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7351C56321636FC5005825AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7351C56521636FC5005825AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11901FFD056B8BB6B42A08E2 /* Pods-ModuleAganda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WA6269DM;
+				INFOPLIST_FILE = ModuleAganda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.ModuleAganda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7351C56621636FC5005825AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD8064F6506F1FED488B1043 /* Pods-ModuleAganda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WA6269DM;
+				INFOPLIST_FILE = ModuleAganda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.ModuleAganda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		7351C56821636FC5005825AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417544A9BBC587A268B41FBB /* Pods-ModuleAgandaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WA6269DM;
+				INFOPLIST_FILE = ModuleAgandaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.ModuleAgandaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModuleAganda.app/ModuleAganda";
+			};
+			name = Debug;
+		};
+		7351C56921636FC5005825AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1DF17F37EB5F0370B550F4 /* Pods-ModuleAgandaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WA6269DM;
+				INFOPLIST_FILE = ModuleAgandaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.ModuleAgandaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModuleAganda.app/ModuleAganda";
+			};
+			name = Release;
+		};
+		7351C56B21636FC5005825AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92CC6EA413B438EC8532AD7F /* Pods-ModuleAgandaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WA6269DM;
+				INFOPLIST_FILE = ModuleAgandaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.ModuleAgandaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ModuleAganda;
+			};
+			name = Debug;
+		};
+		7351C56C21636FC5005825AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABEA1CE69E114AD36A514319 /* Pods-ModuleAgandaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26WA6269DM;
+				INFOPLIST_FILE = ModuleAgandaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gabriel.ModuleAgandaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ModuleAganda;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7351C53721636FC4005825AC /* Build configuration list for PBXProject "ModuleAganda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7351C56221636FC5005825AC /* Debug */,
+				7351C56321636FC5005825AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7351C56421636FC5005825AC /* Build configuration list for PBXNativeTarget "ModuleAganda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7351C56521636FC5005825AC /* Debug */,
+				7351C56621636FC5005825AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7351C56721636FC5005825AC /* Build configuration list for PBXNativeTarget "ModuleAgandaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7351C56821636FC5005825AC /* Debug */,
+				7351C56921636FC5005825AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7351C56A21636FC5005825AC /* Build configuration list for PBXNativeTarget "ModuleAgandaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7351C56B21636FC5005825AC /* Debug */,
+				7351C56C21636FC5005825AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7351C53421636FC4005825AC /* Project object */;
+}

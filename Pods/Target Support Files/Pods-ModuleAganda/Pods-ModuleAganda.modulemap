@@ -1,0 +1,6 @@
+framework module Pods_ModuleAganda {
+  umbrella header "Pods-ModuleAganda-umbrella.h"
+
+  export *
+  module * { export * }
+}
