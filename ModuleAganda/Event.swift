@@ -12,10 +12,11 @@ class Event {
     
     private var _id : Int = 0
     private var _title : String = ""
-    private var _type : String = ""
+    private var _type : TypeCalendar?
     private var _dateBegin:String?
     private var _dateEnd:String?
     private var _comment:String = ""
+    
     
     var id:Int {
         get {
@@ -35,9 +36,9 @@ class Event {
         }
     }
     
-    var type:String {
+    var type:TypeCalendar {
         get {
-            return _type
+            return _type!
         }
         set {
             _type = newValue

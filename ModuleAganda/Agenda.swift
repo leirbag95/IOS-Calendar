@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import EventKit
 
 /*
  *
  *NOTE :
- * https://www.youtube.com/watch?v=Qd_Gc67xzlw
+ * 
  */
 
-class ViewController: UIViewController {
+class Agenda: UIViewController {
     
     //MARK: IBOutlet
     @IBOutlet weak var segmentControl: UISegmentedControl!
-    
     @IBOutlet weak var week_view: UIView!
     @IBOutlet weak var month_view: UIView!
     @IBOutlet weak var day_view: UIView!
@@ -27,15 +27,66 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         /*Navigation bar*/
+        initNavigationController()
+        /*Calendar event*/
+        initCalendarFromEKEventStore()
+
+    }
+    
+    
+    //MARK: private
+    
+    private func initCalendarFromEKEventStore() {
+        /*Initialise le calendrier avec des dates du calendrier d'apple*/
+        let eventStore = EKEventStore()
+        eventStore.requestAccess(to: .event) { (isAccept, _) in
+            if isAccept {
+                let calendars = eventStore.calendars(for: .event)
+                
+                for calendar in calendars {
+                    
+                    let oneYearAgo = Date(timeIntervalSinceNow: -365*24*3600)
+                    let oneYearAfter = Date(timeIntervalSinceNow: +365*24*3600)
+                    
+                    let predicate = eventStore.predicateForEvents(withStart: oneYearAgo, end: oneYearAfter, calendars: [calendar])
+                    
+                    var events = eventStore.events(matching: predicate)
+                    print(calendar.title)
+                    for event in events {
+                        let ev = Event()
+                        let formatter = DateFormatter()
+                        ev.title = event.title
+                        //On adapte le type de l'evenement au calendrier
+                        switch calendar.title {
+                            case "Jours fériés français":
+                                ev.type = .ferie
+                            default:
+                                ev.type = .autre
+                        }
+                        formatter.dateFormat = "yyyy dd MMMM,HH:mm"
+                        ev.dateBegin = formatter.string(from: event.startDate)
+                        ev.dateEnd = formatter.string(from: event.endDate)
+                        formatter.dateFormat = "EEEE dd MMMM"
+                        let tmpDateIndex = formatter.string(from: event.startDate)
+                        if currentEventArray[tmpDateIndex] != nil {
+                            currentEventArray[tmpDateIndex]?.append(ev)
+                        } else {
+                            currentEventArray[tmpDateIndex] = [ev]
+                        }
+                    }
+                }
+            }
+        }
+    }
+    private func initNavigationController() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = UIColor.clear
-
     }
     //MARK:IBAction
- 
     
     @IBAction func ScrollToCurrentDay(_ sender: UIBarButtonItem) {
         /*Aujourd'hui item*/
@@ -57,6 +108,7 @@ class ViewController: UIViewController {
         destinationController3.labelDayNumber.text = currentDate.components(separatedBy: "-")[1]
         destinationController3.labelYear.text = currentDate.components(separatedBy: "-")[2]
         destinationController3.currentDate = Date()
+        destinationController3.initialiseArrayByIndex(currentEventArray)
     
     }
     

@@ -57,7 +57,18 @@ extension CustomCellWeek : UITableViewDelegate, UITableViewDataSource {
         formatter.dateFormat = "EEEE dd MMMM"
         let strDate = formatter.string(from: date!)
         if let arrayEvent = currentEventArray[strDate] {
-            cell.textLabel?.text = arrayEvent[indexPath.row].title
+            let event = arrayEvent[indexPath.row]
+            cell.textLabel?.text = event.title
+            switch event.type {
+            case .autre:
+                cell.backgroundColor = .green
+            case .ferie:
+                cell.backgroundColor = .purple
+            case .outlook:
+                cell.backgroundColor = .blue
+            case .calendar: break
+                //Nothing
+            }
         } else {
             //cell.textLabel?.text = ""
         }

@@ -44,7 +44,7 @@ class AddEventTableViewController: UITableViewController {
     @IBAction func AddEvent(_ sender: UIBarButtonItem) {
         if !txt_title.text!.isEmpty {
             let event = Event()
-            event.type = "NO TYPE"
+            event.type = .calendar
             event.title = txt_title.text!
             /*
             * You have to check if there is no event

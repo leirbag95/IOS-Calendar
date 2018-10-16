@@ -47,6 +47,7 @@ class CalendarDayView: UIViewController {
     //MARK: public
     public func initialiseArrayByIndex(_ cEventArray: [String:[Event]]) {
        
+        viewDetails.isHidden = true
         eventArrayByIndex = []
         
         let formatter = DateFormatter()
@@ -72,7 +73,7 @@ extension CalendarDayView : UICollectionViewDelegate, UICollectionViewDataSource
         
         var detailCalendar:CalendarDetailTableViewController = self.children.last as!  CalendarDetailTableViewController
         let eventSelected = eventArrayByIndex[indexPath.row]
-        detailCalendar.lbl_type.text = eventSelected.type
+        detailCalendar.lbl_type.text = eventSelected.type.rawValue
         detailCalendar.lbl_title.text = eventSelected.title
         detailCalendar.lbl_dateBegin.text = eventSelected.dateBegin
         detailCalendar.lbl_dateEnd.text = eventSelected.dateEnd

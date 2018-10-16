@@ -37,7 +37,7 @@ class CalendarWeekView: UIViewController {
         calendar_collectionView.visibleDates { (visibleDates) in
             let date = visibleDates.monthDates.first!.date
             self.formatter.dateFormat = "MMMM"
-            let vc = self.parent as! ViewController
+            let vc = self.parent as! Agenda
             vc.lbl_month.title = self.formatter.string(from: date)
             self.formatter.dateFormat = "yyyy"
             vc.lbl_year.title = self.formatter.string(from: date)
@@ -73,7 +73,7 @@ extension CalendarWeekView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDat
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         /*Set segment Control on Day Segment (0) and date*/
-        let vc = self.parent as! ViewController
+        let vc = self.parent as! Agenda
         vc.segmentControl.selectedSegmentIndex = 0
         vc.week_view.isHidden = true
         vc.day_view.isHidden = false
@@ -85,10 +85,7 @@ extension CalendarWeekView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDat
         vday.labelDayName.text = currentDate.components(separatedBy: "-").first
         vday.labelDayNumber.text = currentDate.components(separatedBy: "-")[1]
         vday.labelYear.text = currentDate.components(separatedBy: "-")[2]
-        
-        //Hide details view
-        vday.viewDetails.isHidden = true
-        
+                
         vday.initialiseArrayByIndex(currentEventArray)
 
     }
@@ -137,7 +134,7 @@ extension CalendarWeekView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDat
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
         let date = visibleDates.monthDates.first!.date
         self.formatter.dateFormat = "MMMM"
-        let vc = self.parent as! ViewController
+        let vc = self.parent as!Agenda
         vc.lbl_month.title = self.formatter.string(from: date)
         self.formatter.dateFormat = "yyyy"
         vc.lbl_year.title = self.formatter.string(from: date)

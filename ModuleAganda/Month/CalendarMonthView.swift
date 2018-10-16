@@ -33,7 +33,7 @@ class CalendarMonthView: UIViewController {
         calendar_collectionview.visibleDates { (visibleDates) in
             let date = visibleDates.monthDates.first!.date
             self.formatter.dateFormat = "MMMM"
-            let vc = self.parent as! ViewController
+            let vc = self.parent as! Agenda
             vc.lbl_month.title = self.formatter.string(from: date)
             self.formatter.dateFormat = "yyyy"
             vc.lbl_year.title = self.formatter.string(from: date)
@@ -41,7 +41,7 @@ class CalendarMonthView: UIViewController {
     }
     
     func handleCellCurrentDay(view: JTAppleCell?, cellState: CellState) {
-        guard let validCell = view as? CustomCell else { return }
+        guard let validCell = view as? CustomMonthCell else { return }
         
         let currentDay = Date()
         
@@ -80,7 +80,7 @@ extension CalendarMonthView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         /*Set segment Control on Day Segment (0) and date*/
-        let vc = self.parent as! ViewController
+        let vc = self.parent as! Agenda
         vc.segmentControl.selectedSegmentIndex = 0
         vc.month_view.isHidden = true
         vc.day_view.isHidden = false
@@ -93,8 +93,6 @@ extension CalendarMonthView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
         vday.labelDayNumber.text = currentDate.components(separatedBy: "-")[1]
         vday.labelYear.text = currentDate.components(separatedBy: "-")[2]
         
-        //Hide details view
-        vday.viewDetails.isHidden = true
         
         vday.initialiseArrayByIndex(currentEventArray)
     }
@@ -119,7 +117,7 @@ extension CalendarMonthView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     }
     
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
-        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
+        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomMonthCell
         
         cell.layer.borderColor = UIColor.gray.cgColor
         cell.lbl_date.text = cellState.text
@@ -151,7 +149,7 @@ extension CalendarMonthView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
         let date = visibleDates.monthDates.first!.date
         self.formatter.dateFormat = "MMMM"
-        let vc = self.parent as! ViewController
+        let vc = self.parent as! Agenda
         vc.lbl_month.title = self.formatter.string(from: date)
         self.formatter.dateFormat = "yyyy"
         vc.lbl_year.title = self.formatter.string(from: date)
