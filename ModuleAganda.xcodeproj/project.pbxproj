@@ -16,6 +16,7 @@
 		7333DD8B216C93C800477D99 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333DD8A216C93C800477D99 /* Event.swift */; };
 		7333DD8D216CB20600477D99 /* CurrentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333DD8C216CB20600477D99 /* CurrentValue.swift */; };
 		73386857216B472A0057A546 /* CalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73386856216B472A0057A546 /* CalendarDayView.swift */; };
+		734B43C12181AFD900C9A948 /* EventTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734B43C02181AFD900C9A948 /* EventTypeTableViewController.swift */; };
 		7351C54021636FC4005825AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C53F21636FC4005825AC /* AppDelegate.swift */; };
 		7351C54221636FC4005825AC /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C54121636FC4005825AC /* Agenda.swift */; };
 		7351C54521636FC4005825AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7351C54321636FC4005825AC /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		7333DD8A216C93C800477D99 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7333DD8C216CB20600477D99 /* CurrentValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValue.swift; sourceTree = "<group>"; };
 		73386856216B472A0057A546 /* CalendarDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayView.swift; sourceTree = "<group>"; };
+		734B43C02181AFD900C9A948 /* EventTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeTableViewController.swift; sourceTree = "<group>"; };
 		7351C53C21636FC4005825AC /* ModuleAganda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleAganda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7351C53F21636FC4005825AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7351C54121636FC4005825AC /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
@@ -146,6 +148,15 @@
 			path = Day;
 			sourceTree = "<group>";
 		};
+		734B43BF2181AFBC00C9A948 /* AddEventModule */ = {
+			isa = PBXGroup;
+			children = (
+				73870752216B68840033181B /* AddEventTableViewController.swift */,
+				734B43C02181AFD900C9A948 /* EventTypeTableViewController.swift */,
+			);
+			path = AddEventModule;
+			sourceTree = "<group>";
+		};
 		7351C53321636FC4005825AC = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +182,7 @@
 		7351C53E21636FC4005825AC /* ModuleAganda */ = {
 			isa = PBXGroup;
 			children = (
-				73870752216B68840033181B /* AddEventTableViewController.swift */,
+				734B43BF2181AFBC00C9A948 /* AddEventModule */,
 				7333DD8C216CB20600477D99 /* CurrentValue.swift */,
 				7333DD8A216C93C800477D99 /* Event.swift */,
 				731A667D21637B67004A25DC /* Month */,
@@ -437,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734B43C12181AFD900C9A948 /* EventTypeTableViewController.swift in Sources */,
 				73386857216B472A0057A546 /* CalendarDayView.swift in Sources */,
 				731A66802163ACF0004A25DC /* CalendarWeekView.swift in Sources */,
 				731963732174819100D06504 /* CalendarDetailTableViewController.swift in Sources */,

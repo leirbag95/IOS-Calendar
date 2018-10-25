@@ -46,14 +46,10 @@ class Agenda: UIViewController {
                 let calendars = eventStore.calendars(for: .event)
                 
                 for calendar in calendars {
-                    
                     let oneYearAgo = Date(timeIntervalSinceNow: -365*24*3600)
                     let oneYearAfter = Date(timeIntervalSinceNow: +365*24*3600)
-                    
                     let predicate = eventStore.predicateForEvents(withStart: oneYearAgo, end: oneYearAfter, calendars: [calendar])
-                    
-                    var events = eventStore.events(matching: predicate)
-                    print(calendar.title)
+                    let events = eventStore.events(matching: predicate)
                     for event in events {
                         let ev = Event()
                         let formatter = DateFormatter()
@@ -62,6 +58,8 @@ class Agenda: UIViewController {
                         switch calendar.title {
                             case "Jours fériés français":
                                 ev.type = .ferie
+                            case "Found in Mail":
+                                ev.type = .outlook
                             default:
                                 ev.type = .autre
                         }

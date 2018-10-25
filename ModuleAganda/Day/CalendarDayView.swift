@@ -91,6 +91,8 @@ extension CalendarDayView : UICollectionViewDelegate, UICollectionViewDataSource
         formatter.dateFormat = "EEEE dd MMMM"
         let strDate = formatter.string(from: currentDate)
         
+        cell.img_logo.image = UIImage(named: eventArrayByIndex[indexPath.row].type.rawValue)
+        
         cell.lbl_title.text = eventArrayByIndex[indexPath.row].title
         cell.lbl_h1.text = eventArrayByIndex[indexPath.row].dateBegin.components(separatedBy: ",").last
         cell.lbl_h2.text = eventArrayByIndex[indexPath.row].dateEnd.components(separatedBy: ",").last

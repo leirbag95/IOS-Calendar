@@ -49,11 +49,12 @@ class CustomMonthCell: JTAppleCell, UITableViewDataSource, UITableViewDelegate {
                 cell.backgroundColor = .purple
             case .outlook:
                 cell.backgroundColor = .blue
-            case .calendar: break
-                //Nothing
+            case .calendar:
+                cell.backgroundColor = UIColor(red: 91/255, green: 184/255, blue: 228/255, alpha: 1)
             }
         } else {
             //cell.textLabel?.text = ""
+            print("hello")
         }
         return cell
     }
