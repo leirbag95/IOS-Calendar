@@ -15,7 +15,7 @@ import EventKit
  * 
  */
 
-class Agenda: UIViewController {
+class AgendaViewController: UIViewController {
     
     //MARK: IBOutlet
     @IBOutlet weak var segmentControl: UISegmentedControl!

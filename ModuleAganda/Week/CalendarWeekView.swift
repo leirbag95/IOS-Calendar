@@ -11,38 +11,43 @@ import JTAppleCalendar
 
 class CalendarWeekView: UIViewController {
 
-    //MARK: IBOutlet
+    //MARK: - IBOutlet
     @IBOutlet weak var calendar_collectionView: JTAppleCalendarView!
     
     
     
-    //MARK: var
+    //MARK: - let
     let formatter = DateFormatter()
     let grayColor = UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        calendar_collectionView.scrollDirection = .horizontal
-        
-        //Scroll to current date
-        calendar_collectionView.scrollToDate(Date())
-        
-        /* First Initialisation */
-        calendar_collectionView.minimumLineSpacing = 0
-        calendar_collectionView.minimumInteritemSpacing = 0
+        initJTAppleCalendar(calendar_collectionView)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        calendar_collectionView.visibleDates { (visibleDates) in
+    
+    //MARK: - Private functions
+    
+    /**
+     Initialisation du calendrier pour le segment 'semaine'
+     */
+    private func initJTAppleCalendar(_ calendar:JTAppleCalendarView) {
+        calendar.scrollDirection = .horizontal
+        calendar.scrollToDate(Date())
+        calendar.minimumLineSpacing = 0
+        calendar.minimumInteritemSpacing = 0
+        calendar.visibleDates { (visibleDates) in
             let date = visibleDates.monthDates.first!.date
             self.formatter.dateFormat = "MMMM"
-            let vc = self.parent as! Agenda
+            let vc = self.parent as! AgendaViewController
             vc.lbl_month.title = self.formatter.string(from: date)
             self.formatter.dateFormat = "yyyy"
             vc.lbl_year.title = self.formatter.string(from: date)
         }
     }
+    
+    //MARK: - JTAppleCalendar functions
     
     func handleCellCurrentDay(view: JTAppleCell?, cellState: CellState) {
         guard let validCell = view as? CustomCellWeek else { return }
@@ -73,8 +78,10 @@ extension CalendarWeekView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDat
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         /*Set segment Control on Day Segment (0) and date*/
-        let vc = self.parent as! Agenda
+        //1. on crée la vue AgendaViewController
+        let vc = self.parent as! AgendaViewController
         vc.segmentControl.selectedSegmentIndex = 0
+        //2. on affiche le jour selectioné
         vc.week_view.isHidden = true
         vc.day_view.isHidden = false
         
@@ -85,9 +92,7 @@ extension CalendarWeekView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDat
         vday.labelDayName.text = currentDate.components(separatedBy: "-").first
         vday.labelDayNumber.text = currentDate.components(separatedBy: "-")[1]
         vday.labelYear.text = currentDate.components(separatedBy: "-")[2]
-                
         vday.initialiseArrayByIndex(currentEventArray)
-
     }
     
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
@@ -134,7 +139,7 @@ extension CalendarWeekView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDat
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
         let date = visibleDates.monthDates.first!.date
         self.formatter.dateFormat = "MMMM"
-        let vc = self.parent as!Agenda
+        let vc = self.parent as! AgendaViewController
         vc.lbl_month.title = self.formatter.string(from: date)
         self.formatter.dateFormat = "yyyy"
         vc.lbl_year.title = self.formatter.string(from: date)

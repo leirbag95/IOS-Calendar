@@ -21,25 +21,39 @@ class CalendarMonthView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       //Scroll to current date
-        calendar_collectionview.scrollToDate(Date())
-        
-        /* First Initialisation */
-        calendar_collectionview.minimumLineSpacing = 0
-        calendar_collectionview.minimumInteritemSpacing = 0
+       initJTAppleCalendar(calendar_collectionview)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         calendar_collectionview.visibleDates { (visibleDates) in
             let date = visibleDates.monthDates.first!.date
             self.formatter.dateFormat = "MMMM"
-            let vc = self.parent as! Agenda
+            let vc = self.parent as! AgendaViewController
+            vc.lbl_month.title = self.formatter.string(from: date)
+            self.formatter.dateFormat = "yyyy"
+            vc.lbl_year.title = self.formatter.string(from: date)
+        }
+    }
+    //MARK: - private functions
+    /**
+     Initialisation du calendrier pour le segment 'semaine'
+     */
+    private func initJTAppleCalendar(_ calendar:JTAppleCalendarView) {
+        calendar.scrollDirection = .horizontal
+        calendar.scrollToDate(Date())
+        calendar.minimumLineSpacing = 0
+        calendar.minimumInteritemSpacing = 0
+        calendar.visibleDates { (visibleDates) in
+            let date = visibleDates.monthDates.first!.date
+            self.formatter.dateFormat = "MMMM"
+            let vc = self.parent as! AgendaViewController
             vc.lbl_month.title = self.formatter.string(from: date)
             self.formatter.dateFormat = "yyyy"
             vc.lbl_year.title = self.formatter.string(from: date)
         }
     }
     
+    //MARK: - JTAppleCalendar functions
     func handleCellCurrentDay(view: JTAppleCell?, cellState: CellState) {
         guard let validCell = view as? CustomMonthCell else { return }
         
@@ -80,7 +94,7 @@ extension CalendarMonthView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         /*Set segment Control on Day Segment (0) and date*/
-        let vc = self.parent as! Agenda
+        let vc = self.parent as! AgendaViewController
         vc.segmentControl.selectedSegmentIndex = 0
         vc.month_view.isHidden = true
         vc.day_view.isHidden = false
@@ -149,7 +163,7 @@ extension CalendarMonthView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
         let date = visibleDates.monthDates.first!.date
         self.formatter.dateFormat = "MMMM"
-        let vc = self.parent as! Agenda
+        let vc = self.parent as! AgendaViewController
         vc.lbl_month.title = self.formatter.string(from: date)
         self.formatter.dateFormat = "yyyy"
         vc.lbl_year.title = self.formatter.string(from: date)
