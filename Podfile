@@ -7,6 +7,7 @@ target 'ModuleAganda' do
 
   # Pods for ModuleAganda
   pod 'JTAppleCalendar'
+  pod 'KVKCalendar'
 
   target 'ModuleAgandaTests' do
     inherit! :search_paths

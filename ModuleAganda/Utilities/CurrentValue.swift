@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 //MAIN
-
-var currentEventArray:[String:[Event]] = [:]
+var currentEventArray:[String:[CalendarEvent]] = [:]
 
 enum TypeCalendar : String {
     case calendar = "Calendrier"

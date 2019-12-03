@@ -1,148 +1,113 @@
 //
-//  CalendarWeekView.swift
+//  CalendarDayView.swift
 //  ModuleAganda
 //
-//  Created by Gabriel Elfassi on 02/10/2018.
+//  Created by Gabriel Elfassi on 08/10/2018.
 //  Copyright © 2018 Gabriel Elfassi. All rights reserved.
 //
 
 import UIKit
-import JTAppleCalendar
+import KVKCalendar
 
 class CalendarWeekView: UIViewController {
-
-    //MARK: - IBOutlet
-    @IBOutlet weak var calendar_collectionView: JTAppleCalendarView!
     
+    //MARK: public var
+    public var strDate:String = String()
+    public var currentDate:Date = Date()
+    var eventArrayByIndex:[CalendarEvent] = []
     
-    
-    //MARK: - let
+    //MARK: const let
     let formatter = DateFormatter()
-    let grayColor = UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1)
+    let cellId = "cell"
+    let rotationAngle:CGFloat = 90
+    
+    public var events = [Event]()
+       
+    private var selectDate: Date = {
+        return Date()
+    }()
+       
+       
+    public lazy var calendarView: CalendarView = {
+        var style = Style()
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            style.monthStyle.isHiddenSeporator = true
+            style.timelineStyle.widthTime = 40
+            style.timelineStyle.offsetTimeX = 2
+            style.timelineStyle.offsetLineLeft = 2
+        } else {
+            style.timelineStyle.widthEventViewer = 500
+        }
+        style.followInInterfaceStyle = true
+        style.timelineStyle.offsetTimeY = 80
+        style.timelineStyle.offsetEvent = 3
+        style.timelineStyle.currentLineHourWidth = 40
+        style.allDayStyle.isPinned = true
+        style.startWeekDay = .monday
+        style.timeHourSystem = .twentyFourHour
+           
+        let calendar = CalendarView(frame: view.frame, date: selectDate, style: style)
+        calendar.delegate = self
+        calendar.dataSource = self
+        return calendar
+    }()
+            
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        initJTAppleCalendar(calendar_collectionView)
-    }
-    
-    
-    //MARK: - Private functions
-    
-    /**
-     Initialisation du calendrier pour le segment 'semaine'
-     */
-    private func initJTAppleCalendar(_ calendar:JTAppleCalendarView) {
-        calendar.scrollDirection = .horizontal
-        calendar.scrollToDate(Date())
-        calendar.minimumLineSpacing = 0
-        calendar.minimumInteritemSpacing = 0
-        calendar.visibleDates { (visibleDates) in
-            let date = visibleDates.monthDates.first!.date
-            self.formatter.dateFormat = "MMMM"
-            let vc = self.parent as! AgendaViewController
-            vc.lbl_month.title = self.formatter.string(from: date)
-            self.formatter.dateFormat = "yyyy"
-            vc.lbl_year.title = self.formatter.string(from: date)
-        }
-    }
-    
-    //MARK: - JTAppleCalendar functions
-    
-    func handleCellCurrentDay(view: JTAppleCell?, cellState: CellState) {
-        guard let validCell = view as? CustomCellWeek else { return }
-        
-        let currentDay = Date()
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MM yyyy"
-        
-        let currentDateString = dateFormatter.string(from: currentDay)
-        let cellStateDateString = dateFormatter.string(from: cellState.date)
-        
-        /*On entoure la date du jour par un cercle rouge*/
-        if  currentDateString ==  cellStateDateString {
-            validCell.lbl_date.layer.masksToBounds = true
-            validCell.lbl_date.backgroundColor = UIColor.red
-            validCell.lbl_date.layer.cornerRadius = 10
-            validCell.lbl_date.textColor = UIColor.white
-        } else {
-            validCell.lbl_date.backgroundColor = UIColor.clear
-            validCell.lbl_date.textColor = UIColor.black
-        }
-    }
-    
-}
-
-extension CalendarWeekView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
-    
-    func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
-        /*Set segment Control on Day Segment (0) and date*/
-        //1. on crée la vue AgendaViewController
-        let vc = self.parent as! AgendaViewController
-        vc.segmentControl.selectedSegmentIndex = 0
-        //2. on affiche le jour selectioné
-        vc.week_view.isHidden = true
-        vc.day_view.isHidden = false
-        
-        let vday = vc.children[0] as! CalendarDayView
         formatter.dateFormat = "EEEE-dd-MMMM yyyy"
-        var currentDate = formatter.string(from: date)
-        vday.currentDate = date
-        vday.labelDayName.text = currentDate.components(separatedBy: "-").first
-        vday.labelDayNumber.text = currentDate.components(separatedBy: "-")[1]
-        vday.labelYear.text = currentDate.components(separatedBy: "-")[2]
-        vday.initialiseArrayByIndex(currentEventArray)
-    }
-    
-    func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
-        
-        formatter.dateFormat = "yyyy MM dd"
-        formatter.timeZone = Calendar.current.timeZone
-        formatter.locale = Calendar.current.locale
-        
-        var dateComponent = DateComponents()
-        dateComponent.year = 1
-        let startDate = Date()
-        let endDate = Calendar.current.date(byAdding: dateComponent, to: startDate)
-        let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate!, numberOfRows: 1, calendar: Calendar.current, generateInDates: .forFirstMonthOnly, generateOutDates: .off, firstDayOfWeek: .monday, hasStrictBoundaries: false)
-        
-        return parameters
-    }
-    
-    func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
-        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CustomCellWeek", for: indexPath) as! CustomCellWeek
-        self.calendar(calendar, willDisplay: cell, forItemAt: date, cellState: cellState, indexPath: indexPath)
-        cell.lbl_date.text = cellState.text
-        
-        /*Gray Saturday and Sunday days*/
-        if cellState.day == .sunday || cellState.day == .saturday {
-            cell.backgroundColor = grayColor
-            cell.tableview.backgroundColor = grayColor
-        } else {
-            cell.backgroundColor = .white
-            cell.tableview.backgroundColor = .white
-        }
-        
-        /*For date from tableview*/
-        cell.date = date
-        cell.tableview.reloadData()
-        
-        handleCellCurrentDay(view: cell, cellState: cellState)
-        
-        return cell
-    }
-    
-    func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
-    }
-    
-    func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
-        let date = visibleDates.monthDates.first!.date
-        self.formatter.dateFormat = "MMMM"
-        let vc = self.parent as! AgendaViewController
-        vc.lbl_month.title = self.formatter.string(from: date)
-        self.formatter.dateFormat = "yyyy"
-        vc.lbl_year.title = self.formatter.string(from: date)
-
+        strDate = formatter.string(from: currentDate)
+        calendarView.set(type: .week, date: Date())
+        view.addSubview(calendarView)
     }
 }
+
+extension CalendarWeekView {
+    /**
+     Charge tous les evenements depuis Realm
+     */
+    func loadEvents(_ ev:[Event] = []) {
+//        for calEvent in realm.objects(CalendarEvent.self).filter("_codeVRP == %@", currentCommercial) {
+        for (_, calendar) in currentEventArray {
+            for calEvent in calendar {
+                let startDate = self.formatter(date: calEvent.start)
+                let endDate = self.formatter(date: calEvent.end)
+                    
+                var event = Event()
+                event.id = calEvent.id
+                //Color
+                event.color = EventColor(UIColor.purple)
+                event.colorText = .white
+                // Date & content
+                event.start = startDate
+                event.end = endDate
+                event.isAllDay = calEvent.allDay
+                event.textForMonth = calEvent.nomEvent
+                event.text = "\(calEvent.nomEvent)"
+                self.events.append(event)
+            }
+        }
+//        }
+        self.calendarView.reloadData()
+    }
+    
+    func formatter(date: String) -> Date {
+           let formatter = DateFormatter()
+           formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+           return formatter.date(from: date) ?? Date()
+       }
+}
+
+extension CalendarWeekView: CalendarDelegate {
+    func didSelectDate(date: Date?, type: CalendarType, frame: CGRect?) {
+        selectDate = date ?? Date()
+        calendarView.reloadData()
+    }
+}
+
+extension CalendarWeekView: CalendarDataSource {
+    func eventsForCalendar() -> [Event] {
+        return events
+    }
+}
+

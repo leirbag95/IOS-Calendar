@@ -11,9 +11,10 @@ import UIKit
 //Type Protocol
 var typeEvent:TypeCalendar = .calendar
 
+
 class AddEventTableViewController: UITableViewController {
 
-    //MARK: IBOutlet
+    //MARK: - IBOutlet
     @IBOutlet weak var txt_title: UITextField!
     @IBOutlet weak var switchAllDay: UISwitch!
     @IBOutlet weak var dateBegin: UIDatePicker!
@@ -23,8 +24,14 @@ class AddEventTableViewController: UITableViewController {
     @IBOutlet weak var lblDateEnd: UILabel!
     @IBOutlet weak var lbl_type: UILabel!
     
-    //MARK: private var
+    //MARK: - var
     var indexSelected = -1
+    /**
+     Destiné au appliquer une action liée au popover
+     */
+    var delegateDateProtocol:DateProtocol?
+    
+    //MARK: - let
     let hourInSec = TimeInterval(3600)
     let dayInSec = 86400
     let formatter = DateFormatter()
@@ -40,12 +47,11 @@ class AddEventTableViewController: UITableViewController {
         dateEnd.date = dateBegin.date + hourInSec
     }
     
-    //MARK: private func
     override func viewWillAppear(_ animated: Bool) {
         lbl_type.text = typeEvent.rawValue
     }
     
-    //MARK: IBAction
+    //MARK: - IBAction
     
     @IBAction func dismissCurrentView(_ sender:UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
@@ -53,29 +59,24 @@ class AddEventTableViewController: UITableViewController {
     
     @IBAction func AddEvent(_ sender: UIBarButtonItem) {
         if !txt_title.text!.isEmpty {
-            let event = Event()
-            event.type = typeEvent
-            event.title = txt_title.text!
-            event.comment = txt_comment.text!
-            
-            formatter.dateFormat = "yyyy dd MMMM,HH:mm"
-            event.dateBegin = formatter.string(from: dateBegin.date)
-            event.dateEnd = formatter.string(from: dateEnd.date)
+            let event = CalendarEvent()
+            event.typeEvent = typeEvent.rawValue
+            event.nomEvent = txt_title.text!
+            event.commentaire = txt_comment.text!
+            event.allDay = switchAllDay.isOn
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+            event.start = formatter.string(from: dateBegin.date)
+            event.end = formatter.string(from: dateEnd.date)
             //Ce formatter nous permettera d'acceder par la suite au elements du dictionnaire
-            formatter.dateFormat = "EEEE dd MMMM"
-            if !isEventExist() {
-                let refDateBegin = formatter.string(from: dateBegin.date)
-                if let _ = currentEventArray[refDateBegin] {
-                    currentEventArray[refDateBegin]?.append(event)
-                } else {
-                    currentEventArray[refDateBegin] = [event]
-                }
-                dismiss(animated: true, completion: nil)
+            formatter.dateFormat = "dd/MM/yyyy"
+            let refDateBegin = formatter.string(from: dateBegin.date)
+            if let _ = currentEventArray[refDateBegin] {
+                currentEventArray[refDateBegin]?.append(event)
             } else {
-                let alert = UIAlertController(title: "Impossible d'ajouter l'évenement", message: "Les dates choisies existent déjà.", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler:nil))
-                present(alert, animated: true, completion: nil)
+                currentEventArray[refDateBegin] = [event]
             }
+            delegateDateProtocol?.dismissDateProtocol(event: event)
+            dismiss(animated: true, completion: nil)
         } else {
             let alert = UIAlertController(title: "Impossible d'ajouter l'évenement", message: "Information(s) manquante(s).", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler:nil))
@@ -99,7 +100,9 @@ class AddEventTableViewController: UITableViewController {
         lblDateEnd.text = formatter.string(from: sender.date)
     }
     
-    //Si on selectionne la journée
+    /**
+     Si on selectionne la journée
+     */
     @IBAction func didValueSwitched(_ sender: UISwitch) {
         if sender.isOn {
             formatter.dateFormat = "EEEE dd MMMM"
@@ -109,7 +112,7 @@ class AddEventTableViewController: UITableViewController {
             dateEnd.date = dateEnd.calendar.date(bySettingHour: 23, minute: 59, second: 59, of: Date())!
             lblDateEnd.text = formatter.string(from: Date())
         } else {
-            formatter.dateFormat = "EEEE dd MMMM,HH:mm"
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
             dateBegin.datePickerMode = .dateAndTime
             dateEnd.datePickerMode = .dateAndTime
             dateBegin.date = Date()
@@ -122,36 +125,19 @@ class AddEventTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    //MARK: private
-    private func isEventExist() -> Bool {
-        let refDateBegin = formatter.string(from: dateBegin.date)
-        if let events = currentEventArray[refDateBegin] {
-            for event in events {
-                
-                let dateBeginFromString = convertStringToDate(event.dateBegin)
-                let dateEndFromString = convertStringToDate(event.dateEnd)
-                
-                let case1 = dateBegin.date >= dateBeginFromString && dateEnd.date <= dateEndFromString
-                let case2 = dateBegin.date <= dateBeginFromString && dateEnd.date <= dateEndFromString && dateEnd.date > dateBeginFromString
-                let case3 = dateBegin.date >= dateBeginFromString && dateBegin.date < dateEndFromString && dateEnd.date >= dateEndFromString
-                let case4 = dateBegin.date <= dateBeginFromString  && dateEnd.date >= dateEndFromString
-                print(case1, case2, case3, case4)
-                return case1 || case2 || case3 || case4
-            }
-        }
-        return false
-    }
+    //MARK: - private function
+
     
     private func convertStringToDate(_ date:String) -> Date {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy dd MMMM,HH:mm"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         let date = dateFormatter.date(from:date)!
         
         return date
     }
     
+    //MARK:  - Tableview functions
     
-    //MARK: tableview function
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Select date begin
         if indexPath.section == 1 && indexPath.row == 1 {
@@ -176,7 +162,4 @@ class AddEventTableViewController: UITableViewController {
         }
         return 44
     }
-    
-    
-
 }

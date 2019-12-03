@@ -7,351 +7,485 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A441B5230F9AFBB5D54E43897960334 /* Pods-ModuleAgandaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA5E94FD756DF70D6F9F3A9D033BF1C /* Pods-ModuleAgandaTests-dummy.m */; };
-		28CED39FC4026B32F1E5A07CF060542A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3150DC89B627CCDF7AE9AB1B38AA0C05 /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB9B2CC3F9DB7F5724CC988C9543DEC /* JTAppleCalendarDelegateProtocol.swift */; };
-		371C1A65A79396D04E7BD098BB52F3AE /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F4EECBD86B64A44448320B07E87AD /* UserInteractionFunctions.swift */; };
-		44EAE458BED20531212FAE3246B6350C /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00603DB184CC3CBAAF53E7F46D6AC5D /* JTAppleCalendarLayoutProtocol.swift */; };
-		52CB24003B0C56C788739EF3F2D92DBF /* JTAppleCalendarVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F192D3521916B02D21EC6B3A2ACAA2 /* JTAppleCalendarVariables.swift */; };
-		544656EF3F8C4BEC861BFF1609F553CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		59140E28B15C0248798CBF912447E7FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		62AE4C01F0FD029C69064E885E8CECB2 /* InternalActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94872E6C5C3C4B342551466A836BEC /* InternalActionFunctions.swift */; };
-		64D67338141EF4C99D23D6A01E993A9E /* Pods-ModuleAganda-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69940ED9034DC8DA4F1D4582D59A4745 /* Pods-ModuleAganda-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DE3875930E2A44854A28CFEC04F1992 /* JTAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E412E686DD5D5C62D90F609F198EB /* JTAppleCell.swift */; };
-		732791936803EA17C15C484FE363E66D /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF3F9A2BDEA400B6B86E1F3FB87D141 /* GlobalFunctionsAndExtensions.swift */; };
-		7573593FBE25F85B79E10A7333E583E7 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A21E7CCE8AFB3A84072E5F8B65D7A3D0 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BF6D2DE88FA18F3A0A1ECE15A8F3E6E /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F04D23C4665C25BDBF46EC968F27F9 /* UICollectionViewDelegates.swift */; };
-		8160AFBA5F2BB3FF055076CAFEA4588B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		89C3EC32079226CDBA9AD664CFD3DB7B /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A827C4FB57592C28EDA273CC1A203A /* JTAppleCalendarView.swift */; };
-		9D51A8ADC90310C8270F5C86B7CEB379 /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435272172B1F1E7E9C26DF0F162D5EF0 /* UIScrollViewDelegates.swift */; };
-		9FC6C8FF22D45590A4CC466CDE175749 /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF845A69455A4A94C673E3BD05B2C5 /* JTAppleCollectionReusableView.swift */; };
-		A9A110279F3650CD3BD01F3BF50FC5AA /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11553AB698B72E93630850DC395D94C5 /* CalendarStructs.swift */; };
-		AB09809F7393676145CE3AC327610A90 /* Pods-ModuleAganda-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FD6BD0934FB6997A91EC710079147 /* Pods-ModuleAganda-dummy.m */; };
-		B95FE078CFD340D8F475DE83245F927C /* InternalQueryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DCC9B301D596CEBB0DD8105B517113 /* InternalQueryFunctions.swift */; };
-		C1B6669E99C4AE54D8A0E5265C1F67FB /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D91DB49D50CC07F02559C764C5807 /* JTAppleCalendarLayout.swift */; };
-		C4A208024E68AFBFF1ADA1DFF169A419 /* Pods-ModuleAgandaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1EED569C8841523073F3E47D2E3FBA /* Pods-ModuleAgandaUITests-dummy.m */; };
-		D1906BE5DFF645E22EEED013679F28D5 /* Pods-ModuleAgandaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED20363A2190AFAF5DD3C6A0EAF54B5 /* Pods-ModuleAgandaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E824E5686FA7E8303C4601097FBAC23F /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5364F77524433BC5C19E10FC745E8E /* JTCalendarProtocols.swift */; };
-		EBE4F65BDF335EAA561CB7550913D97D /* Pods-ModuleAgandaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2FDAADB4317F13E12E3B516CB025F5 /* Pods-ModuleAgandaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7F8FE98FBE2455E87F7E41D20FA4194 /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3426D14FB5C08BBD6272ABC8CBD01AB /* CalendarEnums.swift */; };
-		FE1689779B1ABFD6586C76E20297224D /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A10F21E7199EF3BB21BAB090C4F6691F /* JTAppleCalendar-dummy.m */; };
+		102BD5D98CB13D3A2E9B25534EC1FAFD /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BDAD03D4923E8CD77733F6F7F4304F /* Date+Extension.swift */; };
+		119D0C7894ECA3AF2CF8855130569BFF /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5C4F471185235A6F80BAC0372D692 /* GlobalFunctionsAndExtensions.swift */; };
+		1355620BE3501C29A64B4A9F98929B05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		16BA0B74C491099680AD6262DFFE300F /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7BCF69F3DCD8C58669B5828C23547A /* MonthCollectionViewCell.swift */; };
+		17DF6A41781FD9D565C947F8914AFD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		201DF9CD39797CFA764621028670265E /* AllDayEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536CEBBC89F7BECED1200EB3D4B0FC5 /* AllDayEventView.swift */; };
+		22642DFBAB42221CACEC8DBFE2832626 /* InternalActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69F4D3F9A0430E102133781D5996ED4 /* InternalActionFunctions.swift */; };
+		227EE393FA0DC6B53B67697716233F8D /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DEC2F3936EC7A1C89292C86039235F /* JTAppleCollectionReusableView.swift */; };
+		288787D082A539320E6986077D7F17B5 /* TimelineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8BFC5B46A5F703A2C7E1D5D85B8FDD /* TimelineLabel.swift */; };
+		32E17ED13B783FCD27D4BF3BA8003636 /* Pods-ModuleAgandaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDFDBB1B6524A0A40FEACCC0E2FA844 /* Pods-ModuleAgandaUITests-dummy.m */; };
+		3541FB47291ABF24ACF938C7E13B87E8 /* Pods-ModuleAganda-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C05C1DCBFC3E7027D87774568660CC97 /* Pods-ModuleAganda-dummy.m */; };
+		39983AC8CB0A8C24E66A1605037A30D3 /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D021CDD8D8092C0ACD79DF5CBB0186 /* JTAppleCalendarView.swift */; };
+		3FE1FB34221B02A13A4C923C7B126C5B /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9CC4514568A55983FA5B1D90E4D22 /* CalendarEnums.swift */; };
+		45E9B7BBD9B14661523EAA3EE80B811A /* YearViewCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BF4448FEB8EDC4231F25481A03AAFF /* YearViewCalendar.swift */; };
+		4FBE9343AF5D1CB41E04478585CB1144 /* JTAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2EE8D972D52D596B069F431595365 /* JTAppleCell.swift */; };
+		5077B36411EF3B34A7366A97ED70FE7F /* WeekData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D62DAF507016AF587A7C6EB68209D /* WeekData.swift */; };
+		53F36A3C03F2DC653B2E66972366FB51 /* Pods-ModuleAgandaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA8353C1F64212149D8845F9100E82 /* Pods-ModuleAgandaTests-dummy.m */; };
+		5440A32A7CC008B68FAEDC43142BA38B /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE333CF9ECB12BEE1B09AC32FF06BC /* CalendarStructs.swift */; };
+		55500A3624DCD7A35F69C261FD9BD39D /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A750EA9447B8E6B7173191C632DA /* UserInteractionFunctions.swift */; };
+		59596AF3755EFA6C1C07311234635D30 /* MonthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D4B2CED6A56FC127AEC841F3AC25A8 /* MonthData.swift */; };
+		5FF04B0165B6903D699F7F19FEF1E0FD /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D73D8EE964159C66373BF5EF022BD /* TimelineView.swift */; };
+		69525F456C33A7CF74CF015D830DC82E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6955B7EDCCD3AF2764ED80BE23E2C94E /* WeekViewCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209B609D0A97C72A9851ECFF2DA1965 /* WeekViewCalendar.swift */; };
+		6FC0D535AF3DD09A4C235E6074A224CA /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCEEC7D7F1F116D7EF600C1178B20D /* JTAppleCalendarLayoutProtocol.swift */; };
+		72639E29B003A63060B2968FCEEED60E /* ScrollDayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C026E24DBA820995AB23CF1121B9F /* ScrollDayHeaderView.swift */; };
+		759A27E0170AB0D6DBCC70654B568691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		75DC0710C3C2E2F96018FA804DE77C88 /* YearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636DF35C58556CC7B1E7D3C4B187ADF2 /* YearCollectionViewCell.swift */; };
+		76A2A8EF7AECD26C66D55D083C785244 /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EB358E23B912754F5D716DD23FF7AF /* JTAppleCalendarLayout.swift */; };
+		7D3817CBE91BDC372D7CD49301A7CB88 /* DayViewCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4950820D577D6E8AD7ECC2D4A6804096 /* DayViewCalendar.swift */; };
+		82505204F038BD968E2A16C2E742A79C /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D228472C42C74D47799654C3815BD73F /* JTAppleCalendar-dummy.m */; };
+		87D3B121D7ED8EF5646CD51E363D21E0 /* DayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DFB95861904A7F3CB00F33F552692F /* DayData.swift */; };
+		8C9748A2F7032FE2AC1737C0D0846789 /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EF9BDAB89221A9A2962E92144694D /* JTAppleCalendarDelegateProtocol.swift */; };
+		A0257471271E5A3D85BE17655161D950 /* Pods-ModuleAgandaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AF2D656F32D31A772F4CA99F67608A /* Pods-ModuleAgandaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6F18365B637A155008EBCAC08365C15 /* JTAppleCalendarVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF6AEC70BBBF550E0B5485B87E1B2B0 /* JTAppleCalendarVariables.swift */; };
+		A9CAF3B179EFD2481F792239FCF225E2 /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B7E9B0D84479F289988574FA7139C /* JTCalendarProtocols.swift */; };
+		ABA1D42F31D30FA0E3AEF85871468D20 /* MonthViewCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0631DA370FE99F7AFA3C14E6E651503 /* MonthViewCalendar.swift */; };
+		B08A757758278DDD298B13C9691D4821 /* ScrollHeaderDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96FE47B75D9BADDCF4CBD0B5B13F3D /* ScrollHeaderDayCollectionViewCell.swift */; };
+		B44B02C5E38C0303B0B78B4C07A8DE2E /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DAA796513310EDD9D365C09937ACC2 /* Style.swift */; };
+		BCB5653D02DC5F297D99D450912EF455 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BDFC91D6CC4D87A97D8CE370307C420B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AF5129AD8774BD9FC7206D9824AD60 /* CalendarView.swift */; };
+		C00A2C8A90BEC0B888B623B0B7D41EEC /* KVKCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CAF7B056144A2441A6875F6110CFBBC /* KVKCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4BC029C181474D7E044438EE40B34C7 /* YearData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576DAB233F1491AA8522F468F619C78 /* YearData.swift */; };
+		C7D6CA4B206C549F3B4C6C44F26B9BBB /* KVKCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3139C07B5B4A1DC8DDA758519BB5664 /* KVKCalendar-dummy.m */; };
+		CB4EB69BB7F20332794E09DEB5452020 /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C7617DDC9E2F1533602155309C824 /* UICollectionViewDelegates.swift */; };
+		D6E7C024AFB03C863BE3DB42B98C9B11 /* EventPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105B8B7222DB5307AA950F155C46009 /* EventPageView.swift */; };
+		DB2895492B9F9FA6655A65D387EF8384 /* InternalQueryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AACF71A7E39F2B1350CA206B7873B7D /* InternalQueryFunctions.swift */; };
+		DF2680AD0DDF5BDFDAA4C1331AE8A198 /* WeekHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E79D52C56E82D7181A89809425666F /* WeekHeaderView.swift */; };
+		E1F4B7B6B4A5FDA5CC19D5859E9620B6 /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C02D3D459B1F85C8A1B2C570C3A3A1 /* UIScrollViewDelegates.swift */; };
+		E28AA29CB250CCFD12792E4BE1967C86 /* Pods-ModuleAganda-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 995210BF3A8AC6119A940C0752541EFD /* Pods-ModuleAganda-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5AB6B18086CE4068CE2EB914AAC2424 /* YearHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C788A185E27DC4AE1922812FE85789A /* YearHeaderView.swift */; };
+		F3302E539E6EE1F6FBB7EDE6273E1F11 /* Pods-ModuleAgandaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AAC0E5D66F99DC402EF8FCF1F9C7664 /* Pods-ModuleAgandaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C500CDBAC4D62309685D0FDBAD2DBE /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FCA74BE7B69D2E3DC1558F9212E5D7 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F497F7388E31145CBF6B4DC15941F8FF /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D893FCAF8A415147BDF57F2DE6A70B2 /* Calendar+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		343D37A376F3F80B1D55FE9BB16582EA /* PBXContainerItemProxy */ = {
+		2E3B2644E43D87E721FA79B6C96FDE5E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4D5B8B1BE64F80268007C79821DDDC20;
+			remoteGlobalIDString = 421B6ABF460857FE6CA2905EFB5A4F74;
 			remoteInfo = JTAppleCalendar;
 		};
-		D0739BE89E744DF26AFCD33EEB23CC7E /* PBXContainerItemProxy */ = {
+		34B61B003BD0B0C44CDC09F534AD1960 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD3356C81132A4C3304FBB4085F56C13;
+			remoteGlobalIDString = 4CE04C22EE3C92D33774211CCEF46BDF;
 			remoteInfo = "Pods-ModuleAganda";
 		};
-		F8850581C8A937A2BB952DF9CC75F764 /* PBXContainerItemProxy */ = {
+		5FAE9F9CC8815E76C2645A83DD58E47B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD3356C81132A4C3304FBB4085F56C13;
+			remoteGlobalIDString = 7C8627CB6D8E7BCF51A7504F548575BC;
+			remoteInfo = KVKCalendar;
+		};
+		ED09B4D698A63EE99AA3C729AD98EB88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CE04C22EE3C92D33774211CCEF46BDF;
 			remoteInfo = "Pods-ModuleAganda";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06184FB80CDCEDCB15C5EA9E5670AA38 /* Pods-ModuleAgandaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModuleAgandaTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0948E4A158847D597F0CAC19EB0D4832 /* Pods-ModuleAgandaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAgandaTests.release.xcconfig"; sourceTree = "<group>"; };
-		0A6F4EECBD86B64A44448320B07E87AD /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Sources/UserInteractionFunctions.swift; sourceTree = "<group>"; };
-		0BEE123C421F9F17CEC8B1A0DD2A8191 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
-		0F1EED569C8841523073F3E47D2E3FBA /* Pods-ModuleAgandaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModuleAgandaUITests-dummy.m"; sourceTree = "<group>"; };
-		11553AB698B72E93630850DC395D94C5 /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/CalendarStructs.swift; sourceTree = "<group>"; };
-		1748D6A7F5DF215592E4C706D4370821 /* Pods-ModuleAgandaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModuleAgandaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		1A2E38322BE12C34AA2DB0869E0BCBAF /* Pods_ModuleAgandaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ModuleAgandaTests.framework; path = "Pods-ModuleAgandaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		219BB248F56832F3E80A7C19042E3817 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A6FD6BD0934FB6997A91EC710079147 /* Pods-ModuleAganda-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModuleAganda-dummy.m"; sourceTree = "<group>"; };
-		2E2D8B619C4C88E7CE00309C9FF10887 /* Pods-ModuleAganda-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModuleAganda-acknowledgements.markdown"; sourceTree = "<group>"; };
-		304C6D8CE3CF203C175AA67E3DF06AC5 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
-		33DCC9B301D596CEBB0DD8105B517113 /* InternalQueryFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalQueryFunctions.swift; path = Sources/InternalQueryFunctions.swift; sourceTree = "<group>"; };
-		36E22A013ADEC1738B0A7AF84F382E73 /* Pods-ModuleAganda-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModuleAganda-resources.sh"; sourceTree = "<group>"; };
-		37B7DC781FE5F3121A25A880A2280761 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AAEC3A8EBCBE70FCFB6494C76D3C97D /* Pods_ModuleAgandaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ModuleAgandaUITests.framework; path = "Pods-ModuleAgandaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B2FDAADB4317F13E12E3B516CB025F5 /* Pods-ModuleAgandaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModuleAgandaUITests-umbrella.h"; sourceTree = "<group>"; };
-		3D1DEE82A0C96B930DD7489EB5DE9242 /* Pods-ModuleAganda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAganda.debug.xcconfig"; sourceTree = "<group>"; };
-		435272172B1F1E7E9C26DF0F162D5EF0 /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollViewDelegates.swift; path = Sources/UIScrollViewDelegates.swift; sourceTree = "<group>"; };
-		4A321822D9202BF6F82AC0BE8FFCC717 /* Pods-ModuleAgandaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAgandaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4EC32FDB7B229A3DA13FA6DBE39DE23A /* Pods_ModuleAganda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ModuleAganda.framework; path = "Pods-ModuleAganda.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		502D28F62F1EA507DAFD0AA438497B8D /* Pods-ModuleAgandaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModuleAgandaTests-resources.sh"; sourceTree = "<group>"; };
-		504E412E686DD5D5C62D90F609F198EB /* JTAppleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCell.swift; path = Sources/JTAppleCell.swift; sourceTree = "<group>"; };
-		51C6EDE0AD688E9F9434EA4B516BA44D /* Pods-ModuleAgandaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAgandaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		59A827C4FB57592C28EDA273CC1A203A /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/JTAppleCalendarView.swift; sourceTree = "<group>"; };
-		5E6D974ECE4FE00351EF519F76CA5B86 /* Pods-ModuleAgandaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAgandaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5ED20363A2190AFAF5DD3C6A0EAF54B5 /* Pods-ModuleAgandaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModuleAgandaTests-umbrella.h"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67164A777E02815FB6F6287376209937 /* Pods-ModuleAgandaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModuleAgandaTests.modulemap"; sourceTree = "<group>"; };
-		69940ED9034DC8DA4F1D4582D59A4745 /* Pods-ModuleAganda-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModuleAganda-umbrella.h"; sourceTree = "<group>"; };
-		6B6466F3F05457949B2CA69897B1C1B1 /* Pods-ModuleAganda-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModuleAganda-frameworks.sh"; sourceTree = "<group>"; };
-		70F192D3521916B02D21EC6B3A2ACAA2 /* JTAppleCalendarVariables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarVariables.swift; path = Sources/JTAppleCalendarVariables.swift; sourceTree = "<group>"; };
-		7541E7C7EDEAD9BA845151AD7CEA29CA /* Pods-ModuleAgandaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModuleAgandaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		87B795BD5D1606FCEA554F2C77A45447 /* Pods-ModuleAgandaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModuleAgandaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8C7CCC0578151925BA88D5B736B27C13 /* Pods-ModuleAganda.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModuleAganda.modulemap"; sourceTree = "<group>"; };
-		91C52A4B274207CDD840AC58D91A2314 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		951B24E13CB0F6D02BC92B92A875422C /* Pods-ModuleAganda-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModuleAganda-acknowledgements.plist"; sourceTree = "<group>"; };
-		972B301666A7F5E0160033035EC09964 /* Pods-ModuleAgandaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModuleAgandaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9CEF845A69455A4A94C673E3BD05B2C5 /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Sources/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
-		9D5364F77524433BC5C19E10FC745E8E /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTCalendarProtocols.swift; path = Sources/JTCalendarProtocols.swift; sourceTree = "<group>"; };
-		A10F21E7199EF3BB21BAB090C4F6691F /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
-		A16A7C0CC6FFADFB031E38F9C767D3F3 /* Pods-ModuleAganda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAganda.release.xcconfig"; sourceTree = "<group>"; };
-		A21E7CCE8AFB3A84072E5F8B65D7A3D0 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
-		A40247B6E87FD11C0555E7C2B980060D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE599CB50C8FF166CDA8A0664A401EF8 /* Pods-ModuleAgandaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModuleAgandaUITests.modulemap"; sourceTree = "<group>"; };
-		AFC415DDF46DCADD76804CBC671ECFF1 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
-		B00603DB184CC3CBAAF53E7F46D6AC5D /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayoutProtocol.swift; path = Sources/JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
-		B57D91DB49D50CC07F02559C764C5807 /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
-		BF94872E6C5C3C4B342551466A836BEC /* InternalActionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalActionFunctions.swift; path = Sources/InternalActionFunctions.swift; sourceTree = "<group>"; };
-		CAB9B2CC3F9DB7F5724CC988C9543DEC /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegateProtocol.swift; path = Sources/JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
-		CFA5E94FD756DF70D6F9F3A9D033BF1C /* Pods-ModuleAgandaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModuleAgandaTests-dummy.m"; sourceTree = "<group>"; };
-		E3B32480FAB1E17A589B8F660EB373B2 /* Pods-ModuleAgandaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModuleAgandaUITests-resources.sh"; sourceTree = "<group>"; };
-		E6AA5D967FE18A4DEE13EEFD84698D1E /* Pods-ModuleAgandaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModuleAgandaTests-frameworks.sh"; sourceTree = "<group>"; };
-		EC24BD2704B6ADC95093C85CE26D8488 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3426D14FB5C08BBD6272ABC8CBD01AB /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/CalendarEnums.swift; sourceTree = "<group>"; };
-		F5F04D23C4665C25BDBF46EC968F27F9 /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewDelegates.swift; path = Sources/UICollectionViewDelegates.swift; sourceTree = "<group>"; };
-		FCF3F9A2BDEA400B6B86E1F3FB87D141 /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
+		02C02D3D459B1F85C8A1B2C570C3A3A1 /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollViewDelegates.swift; path = Sources/UIScrollViewDelegates.swift; sourceTree = "<group>"; };
+		0386682AE097243D160CCD629BB0D1FC /* JTAppleCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JTAppleCalendar-Info.plist"; sourceTree = "<group>"; };
+		056D62DAF507016AF587A7C6EB68209D /* WeekData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeekData.swift; path = KVKCalendar/Classes/WeekData.swift; sourceTree = "<group>"; };
+		18B2EE8D972D52D596B069F431595365 /* JTAppleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCell.swift; path = Sources/JTAppleCell.swift; sourceTree = "<group>"; };
+		1E8BFC5B46A5F703A2C7E1D5D85B8FDD /* TimelineLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimelineLabel.swift; path = KVKCalendar/Classes/TimelineLabel.swift; sourceTree = "<group>"; };
+		22DFB95861904A7F3CB00F33F552692F /* DayData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayData.swift; path = KVKCalendar/Classes/DayData.swift; sourceTree = "<group>"; };
+		230052D0BEC03DBC019C974DDCFCFD20 /* Pods-ModuleAganda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAganda.debug.xcconfig"; sourceTree = "<group>"; };
+		29516A83D490175859A4D0E116FF8142 /* Pods_ModuleAganda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ModuleAganda.framework; path = "Pods-ModuleAganda.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29AF2D656F32D31A772F4CA99F67608A /* Pods-ModuleAgandaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModuleAgandaTests-umbrella.h"; sourceTree = "<group>"; };
+		2AC2235B623D5B7948A6508F5E1AB6BE /* Pods-ModuleAgandaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModuleAgandaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B96FE47B75D9BADDCF4CBD0B5B13F3D /* ScrollHeaderDayCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollHeaderDayCollectionViewCell.swift; path = KVKCalendar/Classes/ScrollHeaderDayCollectionViewCell.swift; sourceTree = "<group>"; };
+		319A5022FEBA2C7F4724523D1F1D9397 /* Pods-ModuleAganda-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModuleAganda-acknowledgements.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		37B9AF97CC3A29A5EB8D072907412D17 /* Pods-ModuleAganda-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModuleAganda-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38EE333CF9ECB12BEE1B09AC32FF06BC /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/CalendarStructs.swift; sourceTree = "<group>"; };
+		39CFA3E60BD20183156EE39E6DFCAAA6 /* Pods-ModuleAgandaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModuleAgandaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3BFA8353C1F64212149D8845F9100E82 /* Pods-ModuleAgandaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModuleAgandaTests-dummy.m"; sourceTree = "<group>"; };
+		3CDA0C5341B1E6651DEDB95FB2826E5A /* KVKCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KVKCalendar.framework; path = KVKCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4372C284FF5E7A8E998F8614593E5F58 /* Pods_ModuleAgandaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ModuleAgandaUITests.framework; path = "Pods-ModuleAgandaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BF4448FEB8EDC4231F25481A03AAFF /* YearViewCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YearViewCalendar.swift; path = KVKCalendar/Classes/YearViewCalendar.swift; sourceTree = "<group>"; };
+		4950820D577D6E8AD7ECC2D4A6804096 /* DayViewCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DayViewCalendar.swift; path = KVKCalendar/Classes/DayViewCalendar.swift; sourceTree = "<group>"; };
+		4CDFDBB1B6524A0A40FEACCC0E2FA844 /* Pods-ModuleAgandaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModuleAgandaUITests-dummy.m"; sourceTree = "<group>"; };
+		502EF9BDAB89221A9A2962E92144694D /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegateProtocol.swift; path = Sources/JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
+		5209B609D0A97C72A9851ECFF2DA1965 /* WeekViewCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeekViewCalendar.swift; path = KVKCalendar/Classes/WeekViewCalendar.swift; sourceTree = "<group>"; };
+		56F342DD41721A33896B75BB4E3C726A /* KVKCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KVKCalendar.modulemap; sourceTree = "<group>"; };
+		5C788A185E27DC4AE1922812FE85789A /* YearHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YearHeaderView.swift; path = KVKCalendar/Classes/YearHeaderView.swift; sourceTree = "<group>"; };
+		5D7FC6F3479D7D0FEDAB1B9F93CBA474 /* KVKCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KVKCalendar-Info.plist"; sourceTree = "<group>"; };
+		5F7BCF69F3DCD8C58669B5828C23547A /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthCollectionViewCell.swift; path = KVKCalendar/Classes/MonthCollectionViewCell.swift; sourceTree = "<group>"; };
+		636DF35C58556CC7B1E7D3C4B187ADF2 /* YearCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YearCollectionViewCell.swift; path = KVKCalendar/Classes/YearCollectionViewCell.swift; sourceTree = "<group>"; };
+		64A9CC4514568A55983FA5B1D90E4D22 /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/CalendarEnums.swift; sourceTree = "<group>"; };
+		6574055FCBF003AC9C7795C45F74500E /* Pods-ModuleAgandaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAgandaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AAC0E5D66F99DC402EF8FCF1F9C7664 /* Pods-ModuleAgandaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModuleAgandaUITests-umbrella.h"; sourceTree = "<group>"; };
+		6D893FCAF8A415147BDF57F2DE6A70B2 /* Calendar+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Calendar+Extension.swift"; path = "KVKCalendar/Classes/Calendar+Extension.swift"; sourceTree = "<group>"; };
+		700CFA2AA140FFA52B7A04C6C2EB7CF0 /* Pods-ModuleAganda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAganda.release.xcconfig"; sourceTree = "<group>"; };
+		76E79D52C56E82D7181A89809425666F /* WeekHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeekHeaderView.swift; path = KVKCalendar/Classes/WeekHeaderView.swift; sourceTree = "<group>"; };
+		7A6B7E9B0D84479F289988574FA7139C /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTCalendarProtocols.swift; path = Sources/JTCalendarProtocols.swift; sourceTree = "<group>"; };
+		7CAF7B056144A2441A6875F6110CFBBC /* KVKCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVKCalendar-umbrella.h"; sourceTree = "<group>"; };
+		7E0D73D8EE964159C66373BF5EF022BD /* TimelineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimelineView.swift; path = KVKCalendar/Classes/TimelineView.swift; sourceTree = "<group>"; };
+		7E6E4580C10E745EBF7DFAA861FFDEB4 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
+		81DEC2F3936EC7A1C89292C86039235F /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Sources/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
+		85B7113EFEF5CB9F32C95CC84F4EC759 /* Pods-ModuleAgandaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAgandaTests.release.xcconfig"; sourceTree = "<group>"; };
+		892C55B04B4E033F0F76C2BE00767D94 /* Pods-ModuleAgandaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModuleAgandaTests.modulemap"; sourceTree = "<group>"; };
+		8956D2290F8DEF0A2F834F20457E8237 /* Pods-ModuleAganda.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModuleAganda.modulemap"; sourceTree = "<group>"; };
+		89D021CDD8D8092C0ACD79DF5CBB0186 /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/JTAppleCalendarView.swift; sourceTree = "<group>"; };
+		8AACF71A7E39F2B1350CA206B7873B7D /* InternalQueryFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalQueryFunctions.swift; path = Sources/InternalQueryFunctions.swift; sourceTree = "<group>"; };
+		8BF6AEC70BBBF550E0B5485B87E1B2B0 /* JTAppleCalendarVariables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarVariables.swift; path = Sources/JTAppleCalendarVariables.swift; sourceTree = "<group>"; };
+		91C00A5F4AC507A6ED551719C3388417 /* Pods_ModuleAgandaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ModuleAgandaTests.framework; path = "Pods-ModuleAgandaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		995210BF3A8AC6119A940C0752541EFD /* Pods-ModuleAganda-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModuleAganda-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A105B8B7222DB5307AA950F155C46009 /* EventPageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventPageView.swift; path = KVKCalendar/Classes/EventPageView.swift; sourceTree = "<group>"; };
+		A5675528C8AE78A7A340D0D94C321310 /* Pods-ModuleAgandaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModuleAgandaUITests-Info.plist"; sourceTree = "<group>"; };
+		AF8C7617DDC9E2F1533602155309C824 /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewDelegates.swift; path = Sources/UICollectionViewDelegates.swift; sourceTree = "<group>"; };
+		B0631DA370FE99F7AFA3C14E6E651503 /* MonthViewCalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthViewCalendar.swift; path = KVKCalendar/Classes/MonthViewCalendar.swift; sourceTree = "<group>"; };
+		B28E827C6D1522F7719EEDEB80773FFB /* Pods-ModuleAgandaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAgandaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B2FCA74BE7B69D2E3DC1558F9212E5D7 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		B576DAB233F1491AA8522F468F619C78 /* YearData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YearData.swift; path = KVKCalendar/Classes/YearData.swift; sourceTree = "<group>"; };
+		B69F4D3F9A0430E102133781D5996ED4 /* InternalActionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalActionFunctions.swift; path = Sources/InternalActionFunctions.swift; sourceTree = "<group>"; };
+		B74C026E24DBA820995AB23CF1121B9F /* ScrollDayHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollDayHeaderView.swift; path = KVKCalendar/Classes/ScrollDayHeaderView.swift; sourceTree = "<group>"; };
+		C05C1DCBFC3E7027D87774568660CC97 /* Pods-ModuleAganda-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModuleAganda-dummy.m"; sourceTree = "<group>"; };
+		C17702E7D3CEB32553B889BBA306E5E5 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
+		C5BDAD03D4923E8CD77733F6F7F4304F /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "KVKCalendar/Classes/Date+Extension.swift"; sourceTree = "<group>"; };
+		C6605C9ED42E8F3CDE66A71C36765928 /* Pods-ModuleAgandaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModuleAgandaTests-Info.plist"; sourceTree = "<group>"; };
+		C74ED10DC68547C435D0678700635AAA /* Pods-ModuleAgandaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModuleAgandaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C9B5C4F471185235A6F80BAC0372D692 /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
+		D228472C42C74D47799654C3815BD73F /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
+		D43042F0B20C9F14A1105C26288E27EC /* Pods-ModuleAgandaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModuleAgandaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D4E6FAC449636C9F23933A1797AAB577 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		D6D4B2CED6A56FC127AEC841F3AC25A8 /* MonthData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonthData.swift; path = KVKCalendar/Classes/MonthData.swift; sourceTree = "<group>"; };
+		E0AF5129AD8774BD9FC7206D9824AD60 /* CalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = KVKCalendar/Classes/CalendarView.swift; sourceTree = "<group>"; };
+		E0EB358E23B912754F5D716DD23FF7AF /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
+		E1DAA796513310EDD9D365C09937ACC2 /* Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Style.swift; path = KVKCalendar/Classes/Style.swift; sourceTree = "<group>"; };
+		E490A750EA9447B8E6B7173191C632DA /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Sources/UserInteractionFunctions.swift; sourceTree = "<group>"; };
+		E536CEBBC89F7BECED1200EB3D4B0FC5 /* AllDayEventView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllDayEventView.swift; path = KVKCalendar/Classes/AllDayEventView.swift; sourceTree = "<group>"; };
+		ED08A482C82E9C99A5F4B72DED3BAF35 /* Pods-ModuleAgandaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModuleAgandaUITests.modulemap"; sourceTree = "<group>"; };
+		EDCCEEC7D7F1F116D7EF600C1178B20D /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayoutProtocol.swift; path = Sources/JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
+		EEC0740C7EF2BEE2B37A71CC1AF44D7C /* Pods-ModuleAgandaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuleAgandaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3139C07B5B4A1DC8DDA758519BB5664 /* KVKCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVKCalendar-dummy.m"; sourceTree = "<group>"; };
+		F531CC2EF8AADD8638F23230C299F243 /* Pods-ModuleAganda-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ModuleAganda-frameworks.sh"; sourceTree = "<group>"; };
+		F940C6B3E75416968204BDCE4C13D6A3 /* Pods-ModuleAganda-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModuleAganda-Info.plist"; sourceTree = "<group>"; };
+		FDD4A4254659990018A2BC88AEFA7078 /* KVKCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVKCalendar-prefix.pch"; sourceTree = "<group>"; };
+		FE18A89CD206FC6BCFCB103DA63ED34F /* KVKCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVKCalendar.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F52A51717EA007CD32A41E453CDF459 /* Frameworks */ = {
+		07E3C7A35C8B3B4EFFB67E1A5FAF959F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8160AFBA5F2BB3FF055076CAFEA4588B /* Foundation.framework in Frameworks */,
+				69525F456C33A7CF74CF015D830DC82E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		553B88F13416D31133A3FD7385D16FB7 /* Frameworks */ = {
+		509C831B49C8F5B4072376323441C5F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CED39FC4026B32F1E5A07CF060542A /* Foundation.framework in Frameworks */,
+				BCB5653D02DC5F297D99D450912EF455 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A2321AF3A2BF81452C55632D217E043 /* Frameworks */ = {
+		7D4DDA8432BAFB189B1B8C46675F4332 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59140E28B15C0248798CBF912447E7FC /* Foundation.framework in Frameworks */,
+				759A27E0170AB0D6DBCC70654B568691 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA14A4A84600ED04F07A279BBDAB782B /* Frameworks */ = {
+		B58AECF2E422C53AE1AA9024519F2BC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				544656EF3F8C4BEC861BFF1609F553CB /* Foundation.framework in Frameworks */,
+				1355620BE3501C29A64B4A9F98929B05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C598085917E38E0A79D7F4813E3DF49B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DF6A41781FD9D565C947F8914AFD1D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D1A0D59A6F829D0454FCD98F356A2D8 /* Products */ = {
+		05DCC65EBC3517A347348EDEDDBB32FD /* Pods-ModuleAganda */ = {
 			isa = PBXGroup;
 			children = (
-				219BB248F56832F3E80A7C19042E3817 /* JTAppleCalendar.framework */,
-				4EC32FDB7B229A3DA13FA6DBE39DE23A /* Pods_ModuleAganda.framework */,
-				1A2E38322BE12C34AA2DB0869E0BCBAF /* Pods_ModuleAgandaTests.framework */,
-				3AAEC3A8EBCBE70FCFB6494C76D3C97D /* Pods_ModuleAgandaUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4C0621B7D6AC65FF278C535F1D838ED2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A40247B6E87FD11C0555E7C2B980060D /* Info.plist */,
-				AFC415DDF46DCADD76804CBC671ECFF1 /* JTAppleCalendar.modulemap */,
-				0BEE123C421F9F17CEC8B1A0DD2A8191 /* JTAppleCalendar.xcconfig */,
-				A10F21E7199EF3BB21BAB090C4F6691F /* JTAppleCalendar-dummy.m */,
-				304C6D8CE3CF203C175AA67E3DF06AC5 /* JTAppleCalendar-prefix.pch */,
-				A21E7CCE8AFB3A84072E5F8B65D7A3D0 /* JTAppleCalendar-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JTAppleCalendar";
-			sourceTree = "<group>";
-		};
-		651C68E5BFE422024B251C333A40BFA0 /* Pods-ModuleAgandaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				91C52A4B274207CDD840AC58D91A2314 /* Info.plist */,
-				AE599CB50C8FF166CDA8A0664A401EF8 /* Pods-ModuleAgandaUITests.modulemap */,
-				87B795BD5D1606FCEA554F2C77A45447 /* Pods-ModuleAgandaUITests-acknowledgements.markdown */,
-				972B301666A7F5E0160033035EC09964 /* Pods-ModuleAgandaUITests-acknowledgements.plist */,
-				0F1EED569C8841523073F3E47D2E3FBA /* Pods-ModuleAgandaUITests-dummy.m */,
-				1748D6A7F5DF215592E4C706D4370821 /* Pods-ModuleAgandaUITests-frameworks.sh */,
-				E3B32480FAB1E17A589B8F660EB373B2 /* Pods-ModuleAgandaUITests-resources.sh */,
-				3B2FDAADB4317F13E12E3B516CB025F5 /* Pods-ModuleAgandaUITests-umbrella.h */,
-				5E6D974ECE4FE00351EF519F76CA5B86 /* Pods-ModuleAgandaUITests.debug.xcconfig */,
-				51C6EDE0AD688E9F9434EA4B516BA44D /* Pods-ModuleAgandaUITests.release.xcconfig */,
-			);
-			name = "Pods-ModuleAgandaUITests";
-			path = "Target Support Files/Pods-ModuleAgandaUITests";
-			sourceTree = "<group>";
-		};
-		6B025670598C68CAA0F611B3914D5577 /* Pods-ModuleAgandaTests */ = {
-			isa = PBXGroup;
-			children = (
-				EC24BD2704B6ADC95093C85CE26D8488 /* Info.plist */,
-				67164A777E02815FB6F6287376209937 /* Pods-ModuleAgandaTests.modulemap */,
-				7541E7C7EDEAD9BA845151AD7CEA29CA /* Pods-ModuleAgandaTests-acknowledgements.markdown */,
-				06184FB80CDCEDCB15C5EA9E5670AA38 /* Pods-ModuleAgandaTests-acknowledgements.plist */,
-				CFA5E94FD756DF70D6F9F3A9D033BF1C /* Pods-ModuleAgandaTests-dummy.m */,
-				E6AA5D967FE18A4DEE13EEFD84698D1E /* Pods-ModuleAgandaTests-frameworks.sh */,
-				502D28F62F1EA507DAFD0AA438497B8D /* Pods-ModuleAgandaTests-resources.sh */,
-				5ED20363A2190AFAF5DD3C6A0EAF54B5 /* Pods-ModuleAgandaTests-umbrella.h */,
-				4A321822D9202BF6F82AC0BE8FFCC717 /* Pods-ModuleAgandaTests.debug.xcconfig */,
-				0948E4A158847D597F0CAC19EB0D4832 /* Pods-ModuleAgandaTests.release.xcconfig */,
-			);
-			name = "Pods-ModuleAgandaTests";
-			path = "Target Support Files/Pods-ModuleAgandaTests";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B5DBE6CF39B1CBB8C27DA72426F8CF2F /* Pods */,
-				3D1A0D59A6F829D0454FCD98F356A2D8 /* Products */,
-				9A2060391833461F71D9F6FFCBED8E28 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		9A2060391833461F71D9F6FFCBED8E28 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EF16F6A809F0FB5F1E30822085953CD3 /* Pods-ModuleAganda */,
-				6B025670598C68CAA0F611B3914D5577 /* Pods-ModuleAgandaTests */,
-				651C68E5BFE422024B251C333A40BFA0 /* Pods-ModuleAgandaUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B5DBE6CF39B1CBB8C27DA72426F8CF2F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E536CEC1AF88CD74159B1DD61628C918 /* JTAppleCalendar */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E536CEC1AF88CD74159B1DD61628C918 /* JTAppleCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				F3426D14FB5C08BBD6272ABC8CBD01AB /* CalendarEnums.swift */,
-				11553AB698B72E93630850DC395D94C5 /* CalendarStructs.swift */,
-				FCF3F9A2BDEA400B6B86E1F3FB87D141 /* GlobalFunctionsAndExtensions.swift */,
-				BF94872E6C5C3C4B342551466A836BEC /* InternalActionFunctions.swift */,
-				33DCC9B301D596CEBB0DD8105B517113 /* InternalQueryFunctions.swift */,
-				CAB9B2CC3F9DB7F5724CC988C9543DEC /* JTAppleCalendarDelegateProtocol.swift */,
-				B57D91DB49D50CC07F02559C764C5807 /* JTAppleCalendarLayout.swift */,
-				B00603DB184CC3CBAAF53E7F46D6AC5D /* JTAppleCalendarLayoutProtocol.swift */,
-				70F192D3521916B02D21EC6B3A2ACAA2 /* JTAppleCalendarVariables.swift */,
-				59A827C4FB57592C28EDA273CC1A203A /* JTAppleCalendarView.swift */,
-				504E412E686DD5D5C62D90F609F198EB /* JTAppleCell.swift */,
-				9CEF845A69455A4A94C673E3BD05B2C5 /* JTAppleCollectionReusableView.swift */,
-				9D5364F77524433BC5C19E10FC745E8E /* JTCalendarProtocols.swift */,
-				F5F04D23C4665C25BDBF46EC968F27F9 /* UICollectionViewDelegates.swift */,
-				435272172B1F1E7E9C26DF0F162D5EF0 /* UIScrollViewDelegates.swift */,
-				0A6F4EECBD86B64A44448320B07E87AD /* UserInteractionFunctions.swift */,
-				4C0621B7D6AC65FF278C535F1D838ED2 /* Support Files */,
-			);
-			name = JTAppleCalendar;
-			path = JTAppleCalendar;
-			sourceTree = "<group>";
-		};
-		EF16F6A809F0FB5F1E30822085953CD3 /* Pods-ModuleAganda */ = {
-			isa = PBXGroup;
-			children = (
-				37B7DC781FE5F3121A25A880A2280761 /* Info.plist */,
-				8C7CCC0578151925BA88D5B736B27C13 /* Pods-ModuleAganda.modulemap */,
-				2E2D8B619C4C88E7CE00309C9FF10887 /* Pods-ModuleAganda-acknowledgements.markdown */,
-				951B24E13CB0F6D02BC92B92A875422C /* Pods-ModuleAganda-acknowledgements.plist */,
-				2A6FD6BD0934FB6997A91EC710079147 /* Pods-ModuleAganda-dummy.m */,
-				6B6466F3F05457949B2CA69897B1C1B1 /* Pods-ModuleAganda-frameworks.sh */,
-				36E22A013ADEC1738B0A7AF84F382E73 /* Pods-ModuleAganda-resources.sh */,
-				69940ED9034DC8DA4F1D4582D59A4745 /* Pods-ModuleAganda-umbrella.h */,
-				3D1DEE82A0C96B930DD7489EB5DE9242 /* Pods-ModuleAganda.debug.xcconfig */,
-				A16A7C0CC6FFADFB031E38F9C767D3F3 /* Pods-ModuleAganda.release.xcconfig */,
+				8956D2290F8DEF0A2F834F20457E8237 /* Pods-ModuleAganda.modulemap */,
+				37B9AF97CC3A29A5EB8D072907412D17 /* Pods-ModuleAganda-acknowledgements.markdown */,
+				319A5022FEBA2C7F4724523D1F1D9397 /* Pods-ModuleAganda-acknowledgements.plist */,
+				C05C1DCBFC3E7027D87774568660CC97 /* Pods-ModuleAganda-dummy.m */,
+				F531CC2EF8AADD8638F23230C299F243 /* Pods-ModuleAganda-frameworks.sh */,
+				F940C6B3E75416968204BDCE4C13D6A3 /* Pods-ModuleAganda-Info.plist */,
+				995210BF3A8AC6119A940C0752541EFD /* Pods-ModuleAganda-umbrella.h */,
+				230052D0BEC03DBC019C974DDCFCFD20 /* Pods-ModuleAganda.debug.xcconfig */,
+				700CFA2AA140FFA52B7A04C6C2EB7CF0 /* Pods-ModuleAganda.release.xcconfig */,
 			);
 			name = "Pods-ModuleAganda";
 			path = "Target Support Files/Pods-ModuleAganda";
 			sourceTree = "<group>";
 		};
+		1F073DAFA4DB30BE7DA4B2DBBD886D4D /* KVKCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				E536CEBBC89F7BECED1200EB3D4B0FC5 /* AllDayEventView.swift */,
+				6D893FCAF8A415147BDF57F2DE6A70B2 /* Calendar+Extension.swift */,
+				E0AF5129AD8774BD9FC7206D9824AD60 /* CalendarView.swift */,
+				C5BDAD03D4923E8CD77733F6F7F4304F /* Date+Extension.swift */,
+				22DFB95861904A7F3CB00F33F552692F /* DayData.swift */,
+				4950820D577D6E8AD7ECC2D4A6804096 /* DayViewCalendar.swift */,
+				A105B8B7222DB5307AA950F155C46009 /* EventPageView.swift */,
+				5F7BCF69F3DCD8C58669B5828C23547A /* MonthCollectionViewCell.swift */,
+				D6D4B2CED6A56FC127AEC841F3AC25A8 /* MonthData.swift */,
+				B0631DA370FE99F7AFA3C14E6E651503 /* MonthViewCalendar.swift */,
+				B74C026E24DBA820995AB23CF1121B9F /* ScrollDayHeaderView.swift */,
+				2B96FE47B75D9BADDCF4CBD0B5B13F3D /* ScrollHeaderDayCollectionViewCell.swift */,
+				E1DAA796513310EDD9D365C09937ACC2 /* Style.swift */,
+				1E8BFC5B46A5F703A2C7E1D5D85B8FDD /* TimelineLabel.swift */,
+				7E0D73D8EE964159C66373BF5EF022BD /* TimelineView.swift */,
+				056D62DAF507016AF587A7C6EB68209D /* WeekData.swift */,
+				76E79D52C56E82D7181A89809425666F /* WeekHeaderView.swift */,
+				5209B609D0A97C72A9851ECFF2DA1965 /* WeekViewCalendar.swift */,
+				636DF35C58556CC7B1E7D3C4B187ADF2 /* YearCollectionViewCell.swift */,
+				B576DAB233F1491AA8522F468F619C78 /* YearData.swift */,
+				5C788A185E27DC4AE1922812FE85789A /* YearHeaderView.swift */,
+				44BF4448FEB8EDC4231F25481A03AAFF /* YearViewCalendar.swift */,
+				98415A3EE2C33159265ABA3DA74A9F01 /* Support Files */,
+			);
+			name = KVKCalendar;
+			path = KVKCalendar;
+			sourceTree = "<group>";
+		};
+		311C3FF607FECBF6B83236822C9D67CA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4E6FAC449636C9F23933A1797AAB577 /* JTAppleCalendar.modulemap */,
+				C17702E7D3CEB32553B889BBA306E5E5 /* JTAppleCalendar.xcconfig */,
+				D228472C42C74D47799654C3815BD73F /* JTAppleCalendar-dummy.m */,
+				0386682AE097243D160CCD629BB0D1FC /* JTAppleCalendar-Info.plist */,
+				7E6E4580C10E745EBF7DFAA861FFDEB4 /* JTAppleCalendar-prefix.pch */,
+				B2FCA74BE7B69D2E3DC1558F9212E5D7 /* JTAppleCalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JTAppleCalendar";
+			sourceTree = "<group>";
+		};
+		49FF07D59B47E523010D9AD976A4546A /* Pods-ModuleAgandaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED08A482C82E9C99A5F4B72DED3BAF35 /* Pods-ModuleAgandaUITests.modulemap */,
+				2AC2235B623D5B7948A6508F5E1AB6BE /* Pods-ModuleAgandaUITests-acknowledgements.markdown */,
+				D43042F0B20C9F14A1105C26288E27EC /* Pods-ModuleAgandaUITests-acknowledgements.plist */,
+				4CDFDBB1B6524A0A40FEACCC0E2FA844 /* Pods-ModuleAgandaUITests-dummy.m */,
+				A5675528C8AE78A7A340D0D94C321310 /* Pods-ModuleAgandaUITests-Info.plist */,
+				6AAC0E5D66F99DC402EF8FCF1F9C7664 /* Pods-ModuleAgandaUITests-umbrella.h */,
+				6574055FCBF003AC9C7795C45F74500E /* Pods-ModuleAgandaUITests.debug.xcconfig */,
+				B28E827C6D1522F7719EEDEB80773FFB /* Pods-ModuleAgandaUITests.release.xcconfig */,
+			);
+			name = "Pods-ModuleAgandaUITests";
+			path = "Target Support Files/Pods-ModuleAgandaUITests";
+			sourceTree = "<group>";
+		};
+		7C267850ECC478F14EF1408D040E5F54 /* Pods-ModuleAgandaTests */ = {
+			isa = PBXGroup;
+			children = (
+				892C55B04B4E033F0F76C2BE00767D94 /* Pods-ModuleAgandaTests.modulemap */,
+				39CFA3E60BD20183156EE39E6DFCAAA6 /* Pods-ModuleAgandaTests-acknowledgements.markdown */,
+				C74ED10DC68547C435D0678700635AAA /* Pods-ModuleAgandaTests-acknowledgements.plist */,
+				3BFA8353C1F64212149D8845F9100E82 /* Pods-ModuleAgandaTests-dummy.m */,
+				C6605C9ED42E8F3CDE66A71C36765928 /* Pods-ModuleAgandaTests-Info.plist */,
+				29AF2D656F32D31A772F4CA99F67608A /* Pods-ModuleAgandaTests-umbrella.h */,
+				EEC0740C7EF2BEE2B37A71CC1AF44D7C /* Pods-ModuleAgandaTests.debug.xcconfig */,
+				85B7113EFEF5CB9F32C95CC84F4EC759 /* Pods-ModuleAgandaTests.release.xcconfig */,
+			);
+			name = "Pods-ModuleAgandaTests";
+			path = "Target Support Files/Pods-ModuleAgandaTests";
+			sourceTree = "<group>";
+		};
+		98415A3EE2C33159265ABA3DA74A9F01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56F342DD41721A33896B75BB4E3C726A /* KVKCalendar.modulemap */,
+				FE18A89CD206FC6BCFCB103DA63ED34F /* KVKCalendar.xcconfig */,
+				F3139C07B5B4A1DC8DDA758519BB5664 /* KVKCalendar-dummy.m */,
+				5D7FC6F3479D7D0FEDAB1B9F93CBA474 /* KVKCalendar-Info.plist */,
+				FDD4A4254659990018A2BC88AEFA7078 /* KVKCalendar-prefix.pch */,
+				7CAF7B056144A2441A6875F6110CFBBC /* KVKCalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KVKCalendar";
+			sourceTree = "<group>";
+		};
+		B2B4D83053711FFDB01B0B868A812AF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar.framework */,
+				3CDA0C5341B1E6651DEDB95FB2826E5A /* KVKCalendar.framework */,
+				29516A83D490175859A4D0E116FF8142 /* Pods_ModuleAganda.framework */,
+				91C00A5F4AC507A6ED551719C3388417 /* Pods_ModuleAgandaTests.framework */,
+				4372C284FF5E7A8E998F8614593E5F58 /* Pods_ModuleAgandaUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B499399BD524CDA1C1176A723C424374 /* JTAppleCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				64A9CC4514568A55983FA5B1D90E4D22 /* CalendarEnums.swift */,
+				38EE333CF9ECB12BEE1B09AC32FF06BC /* CalendarStructs.swift */,
+				C9B5C4F471185235A6F80BAC0372D692 /* GlobalFunctionsAndExtensions.swift */,
+				B69F4D3F9A0430E102133781D5996ED4 /* InternalActionFunctions.swift */,
+				8AACF71A7E39F2B1350CA206B7873B7D /* InternalQueryFunctions.swift */,
+				502EF9BDAB89221A9A2962E92144694D /* JTAppleCalendarDelegateProtocol.swift */,
+				E0EB358E23B912754F5D716DD23FF7AF /* JTAppleCalendarLayout.swift */,
+				EDCCEEC7D7F1F116D7EF600C1178B20D /* JTAppleCalendarLayoutProtocol.swift */,
+				8BF6AEC70BBBF550E0B5485B87E1B2B0 /* JTAppleCalendarVariables.swift */,
+				89D021CDD8D8092C0ACD79DF5CBB0186 /* JTAppleCalendarView.swift */,
+				18B2EE8D972D52D596B069F431595365 /* JTAppleCell.swift */,
+				81DEC2F3936EC7A1C89292C86039235F /* JTAppleCollectionReusableView.swift */,
+				7A6B7E9B0D84479F289988574FA7139C /* JTCalendarProtocols.swift */,
+				AF8C7617DDC9E2F1533602155309C824 /* UICollectionViewDelegates.swift */,
+				02C02D3D459B1F85C8A1B2C570C3A3A1 /* UIScrollViewDelegates.swift */,
+				E490A750EA9447B8E6B7173191C632DA /* UserInteractionFunctions.swift */,
+				311C3FF607FECBF6B83236822C9D67CA /* Support Files */,
+			);
+			name = JTAppleCalendar;
+			path = JTAppleCalendar;
+			sourceTree = "<group>";
+		};
+		BD060478CBD0158D784594712C63A0C4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05DCC65EBC3517A347348EDEDDBB32FD /* Pods-ModuleAganda */,
+				7C267850ECC478F14EF1408D040E5F54 /* Pods-ModuleAgandaTests */,
+				49FF07D59B47E523010D9AD976A4546A /* Pods-ModuleAgandaUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E5BA032A6FCEB72C75BAE1D4D3EAF0B4 /* Pods */,
+				B2B4D83053711FFDB01B0B868A812AF6 /* Products */,
+				BD060478CBD0158D784594712C63A0C4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5BA032A6FCEB72C75BAE1D4D3EAF0B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B499399BD524CDA1C1176A723C424374 /* JTAppleCalendar */,
+				1F073DAFA4DB30BE7DA4B2DBBD886D4D /* KVKCalendar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		219E0E0B53494815579975F00E322E45 /* Headers */ = {
+		64361ED3E1A488EC0EB67BDA3BF1C4EC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1906BE5DFF645E22EEED013679F28D5 /* Pods-ModuleAgandaTests-umbrella.h in Headers */,
+				F3C500CDBAC4D62309685D0FDBAD2DBE /* JTAppleCalendar-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D700C80662366522E20972403D5BBBD /* Headers */ = {
+		88C821FF0ACFD60DD63A566B47A04AEA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64D67338141EF4C99D23D6A01E993A9E /* Pods-ModuleAganda-umbrella.h in Headers */,
+				E28AA29CB250CCFD12792E4BE1967C86 /* Pods-ModuleAganda-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C83BFD196F4A0BDA5A21AB1A0DE934BF /* Headers */ = {
+		A6AAE9DFEBE46D9E147507FBD1E1AFCB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE4F65BDF335EAA561CB7550913D97D /* Pods-ModuleAgandaUITests-umbrella.h in Headers */,
+				C00A2C8A90BEC0B888B623B0B7D41EEC /* KVKCalendar-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D072C17A9D7E22B25810B81A357DAE56 /* Headers */ = {
+		B28CAB7D069D1BB12052A9F2118478CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7573593FBE25F85B79E10A7333E583E7 /* JTAppleCalendar-umbrella.h in Headers */,
+				A0257471271E5A3D85BE17655161D950 /* Pods-ModuleAgandaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCFF9982DD5DBCA32193B35DB434784E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3302E539E6EE1F6FBB7EDE6273E1F11 /* Pods-ModuleAgandaUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4D5B8B1BE64F80268007C79821DDDC20 /* JTAppleCalendar */ = {
+		380B7DFBA2AE472485D0D836366C03CD /* Pods-ModuleAgandaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E78F0AF2A8CFF29D1235D29F58A4E06 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */;
+			buildConfigurationList = 287DE87A54C065B5FEE94C6469D677F1 /* Build configuration list for PBXNativeTarget "Pods-ModuleAgandaUITests" */;
 			buildPhases = (
-				9061D192B467744C06DC862BE82F57A5 /* Sources */,
-				1F52A51717EA007CD32A41E453CDF459 /* Frameworks */,
-				D072C17A9D7E22B25810B81A357DAE56 /* Headers */,
+				DCFF9982DD5DBCA32193B35DB434784E /* Headers */,
+				F0F43F75D6E5C57DE2A4FBDCD5738114 /* Sources */,
+				509C831B49C8F5B4072376323441C5F5 /* Frameworks */,
+				5093D31438930A9700672C036C1AAB84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5F2F128106501206E73216A6C3AE9EF /* PBXTargetDependency */,
+			);
+			name = "Pods-ModuleAgandaUITests";
+			productName = "Pods-ModuleAgandaUITests";
+			productReference = 4372C284FF5E7A8E998F8614593E5F58 /* Pods_ModuleAgandaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA2478573242BF77CD5FFA5E5978FCC /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */;
+			buildPhases = (
+				64361ED3E1A488EC0EB67BDA3BF1C4EC /* Headers */,
+				3C8EF025ACA958E1A6B8DAE4F5A87589 /* Sources */,
+				B58AECF2E422C53AE1AA9024519F2BC3 /* Frameworks */,
+				D3FCB8CDE0C4D72777305EC2B17F420F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -359,166 +493,244 @@
 			);
 			name = JTAppleCalendar;
 			productName = JTAppleCalendar;
-			productReference = 219BB248F56832F3E80A7C19042E3817 /* JTAppleCalendar.framework */;
+			productReference = A0C8E428D980D3C9293A3C2BF740F0CD /* JTAppleCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		812A572416216C61A6E8207E1FE2A725 /* Pods-ModuleAgandaTests */ = {
+		4CE04C22EE3C92D33774211CCEF46BDF /* Pods-ModuleAganda */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 453C1EBBEB2FBEA43802221059BA97B7 /* Build configuration list for PBXNativeTarget "Pods-ModuleAgandaTests" */;
+			buildConfigurationList = 019D00CBA17FABECB42B8339808E41BB /* Build configuration list for PBXNativeTarget "Pods-ModuleAganda" */;
 			buildPhases = (
-				C361F2A55AB0D035083B45BDD1F71983 /* Sources */,
-				553B88F13416D31133A3FD7385D16FB7 /* Frameworks */,
-				219E0E0B53494815579975F00E322E45 /* Headers */,
+				88C821FF0ACFD60DD63A566B47A04AEA /* Headers */,
+				CB42C48D4124E74531E5DD09F9AB9858 /* Sources */,
+				C598085917E38E0A79D7F4813E3DF49B /* Frameworks */,
+				A460C5E33254D686A64A21DC2DD22956 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BD08691EB404C41102DEF74D94FE9BAC /* PBXTargetDependency */,
-			);
-			name = "Pods-ModuleAgandaTests";
-			productName = "Pods-ModuleAgandaTests";
-			productReference = 1A2E38322BE12C34AA2DB0869E0BCBAF /* Pods_ModuleAgandaTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AACFB38ADD10A6C8D4F7A2C50E838F20 /* Pods-ModuleAgandaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2B3739C2E087AD2837EC65BD60A0AD90 /* Build configuration list for PBXNativeTarget "Pods-ModuleAgandaUITests" */;
-			buildPhases = (
-				99605535EA20BE43DC22E92E70EFE51E /* Sources */,
-				6A2321AF3A2BF81452C55632D217E043 /* Frameworks */,
-				C83BFD196F4A0BDA5A21AB1A0DE934BF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0780FF43273623B3A06EC4ADF3D25E06 /* PBXTargetDependency */,
-			);
-			name = "Pods-ModuleAgandaUITests";
-			productName = "Pods-ModuleAgandaUITests";
-			productReference = 3AAEC3A8EBCBE70FCFB6494C76D3C97D /* Pods_ModuleAgandaUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CD3356C81132A4C3304FBB4085F56C13 /* Pods-ModuleAganda */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F51F81307616CE4394B349CFCF6E7347 /* Build configuration list for PBXNativeTarget "Pods-ModuleAganda" */;
-			buildPhases = (
-				3B5AC6ED9AA456C6C63BD1F06192E010 /* Sources */,
-				DA14A4A84600ED04F07A279BBDAB782B /* Frameworks */,
-				7D700C80662366522E20972403D5BBBD /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC50266AA74425F13E9FE5873EDB0B8F /* PBXTargetDependency */,
+				F56137200FAD44EB3946209810E75D1E /* PBXTargetDependency */,
+				3F581CC47F899CCAB505EF3C9CF6030A /* PBXTargetDependency */,
 			);
 			name = "Pods-ModuleAganda";
 			productName = "Pods-ModuleAganda";
-			productReference = 4EC32FDB7B229A3DA13FA6DBE39DE23A /* Pods_ModuleAganda.framework */;
+			productReference = 29516A83D490175859A4D0E116FF8142 /* Pods_ModuleAganda.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C8627CB6D8E7BCF51A7504F548575BC /* KVKCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D7F7456C2EF52B9E6D5917A92406084 /* Build configuration list for PBXNativeTarget "KVKCalendar" */;
+			buildPhases = (
+				A6AAE9DFEBE46D9E147507FBD1E1AFCB /* Headers */,
+				97546F9B2ABCD95EEF3FDD95A8D634CF /* Sources */,
+				07E3C7A35C8B3B4EFFB67E1A5FAF959F /* Frameworks */,
+				98A5BFA22591C7E53B3242BB652CAAC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVKCalendar;
+			productName = KVKCalendar;
+			productReference = 3CDA0C5341B1E6651DEDB95FB2826E5A /* KVKCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4C4BECCE4A36E62A139D566CBF457A8 /* Pods-ModuleAgandaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B41CC7C0AE15CC04069AE20ACBB343 /* Build configuration list for PBXNativeTarget "Pods-ModuleAgandaTests" */;
+			buildPhases = (
+				B28CAB7D069D1BB12052A9F2118478CF /* Headers */,
+				2EEAB800987CF24153525F266F382FAF /* Sources */,
+				7D4DDA8432BAFB189B1B8C46675F4332 /* Frameworks */,
+				98C0A18F77C294358AB2CF6A76E447F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E406706FF8F6F7064AC0A9AE2872D3F4 /* PBXTargetDependency */,
+			);
+			name = "Pods-ModuleAgandaTests";
+			productName = "Pods-ModuleAgandaTests";
+			productReference = 91C00A5F4AC507A6ED551719C3388417 /* Pods_ModuleAgandaTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3D1A0D59A6F829D0454FCD98F356A2D8 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B2B4D83053711FFDB01B0B868A812AF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D5B8B1BE64F80268007C79821DDDC20 /* JTAppleCalendar */,
-				CD3356C81132A4C3304FBB4085F56C13 /* Pods-ModuleAganda */,
-				812A572416216C61A6E8207E1FE2A725 /* Pods-ModuleAgandaTests */,
-				AACFB38ADD10A6C8D4F7A2C50E838F20 /* Pods-ModuleAgandaUITests */,
+				421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */,
+				7C8627CB6D8E7BCF51A7504F548575BC /* KVKCalendar */,
+				4CE04C22EE3C92D33774211CCEF46BDF /* Pods-ModuleAganda */,
+				C4C4BECCE4A36E62A139D566CBF457A8 /* Pods-ModuleAgandaTests */,
+				380B7DFBA2AE472485D0D836366C03CD /* Pods-ModuleAgandaUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		5093D31438930A9700672C036C1AAB84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A5BFA22591C7E53B3242BB652CAAC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C0A18F77C294358AB2CF6A76E447F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A460C5E33254D686A64A21DC2DD22956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3FCB8CDE0C4D72777305EC2B17F420F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3B5AC6ED9AA456C6C63BD1F06192E010 /* Sources */ = {
+		2EEAB800987CF24153525F266F382FAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB09809F7393676145CE3AC327610A90 /* Pods-ModuleAganda-dummy.m in Sources */,
+				53F36A3C03F2DC653B2E66972366FB51 /* Pods-ModuleAgandaTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9061D192B467744C06DC862BE82F57A5 /* Sources */ = {
+		3C8EF025ACA958E1A6B8DAE4F5A87589 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7F8FE98FBE2455E87F7E41D20FA4194 /* CalendarEnums.swift in Sources */,
-				A9A110279F3650CD3BD01F3BF50FC5AA /* CalendarStructs.swift in Sources */,
-				732791936803EA17C15C484FE363E66D /* GlobalFunctionsAndExtensions.swift in Sources */,
-				62AE4C01F0FD029C69064E885E8CECB2 /* InternalActionFunctions.swift in Sources */,
-				B95FE078CFD340D8F475DE83245F927C /* InternalQueryFunctions.swift in Sources */,
-				FE1689779B1ABFD6586C76E20297224D /* JTAppleCalendar-dummy.m in Sources */,
-				3150DC89B627CCDF7AE9AB1B38AA0C05 /* JTAppleCalendarDelegateProtocol.swift in Sources */,
-				C1B6669E99C4AE54D8A0E5265C1F67FB /* JTAppleCalendarLayout.swift in Sources */,
-				44EAE458BED20531212FAE3246B6350C /* JTAppleCalendarLayoutProtocol.swift in Sources */,
-				52CB24003B0C56C788739EF3F2D92DBF /* JTAppleCalendarVariables.swift in Sources */,
-				89C3EC32079226CDBA9AD664CFD3DB7B /* JTAppleCalendarView.swift in Sources */,
-				6DE3875930E2A44854A28CFEC04F1992 /* JTAppleCell.swift in Sources */,
-				9FC6C8FF22D45590A4CC466CDE175749 /* JTAppleCollectionReusableView.swift in Sources */,
-				E824E5686FA7E8303C4601097FBAC23F /* JTCalendarProtocols.swift in Sources */,
-				7BF6D2DE88FA18F3A0A1ECE15A8F3E6E /* UICollectionViewDelegates.swift in Sources */,
-				9D51A8ADC90310C8270F5C86B7CEB379 /* UIScrollViewDelegates.swift in Sources */,
-				371C1A65A79396D04E7BD098BB52F3AE /* UserInteractionFunctions.swift in Sources */,
+				3FE1FB34221B02A13A4C923C7B126C5B /* CalendarEnums.swift in Sources */,
+				5440A32A7CC008B68FAEDC43142BA38B /* CalendarStructs.swift in Sources */,
+				119D0C7894ECA3AF2CF8855130569BFF /* GlobalFunctionsAndExtensions.swift in Sources */,
+				22642DFBAB42221CACEC8DBFE2832626 /* InternalActionFunctions.swift in Sources */,
+				DB2895492B9F9FA6655A65D387EF8384 /* InternalQueryFunctions.swift in Sources */,
+				82505204F038BD968E2A16C2E742A79C /* JTAppleCalendar-dummy.m in Sources */,
+				8C9748A2F7032FE2AC1737C0D0846789 /* JTAppleCalendarDelegateProtocol.swift in Sources */,
+				76A2A8EF7AECD26C66D55D083C785244 /* JTAppleCalendarLayout.swift in Sources */,
+				6FC0D535AF3DD09A4C235E6074A224CA /* JTAppleCalendarLayoutProtocol.swift in Sources */,
+				A6F18365B637A155008EBCAC08365C15 /* JTAppleCalendarVariables.swift in Sources */,
+				39983AC8CB0A8C24E66A1605037A30D3 /* JTAppleCalendarView.swift in Sources */,
+				4FBE9343AF5D1CB41E04478585CB1144 /* JTAppleCell.swift in Sources */,
+				227EE393FA0DC6B53B67697716233F8D /* JTAppleCollectionReusableView.swift in Sources */,
+				A9CAF3B179EFD2481F792239FCF225E2 /* JTCalendarProtocols.swift in Sources */,
+				CB4EB69BB7F20332794E09DEB5452020 /* UICollectionViewDelegates.swift in Sources */,
+				E1F4B7B6B4A5FDA5CC19D5859E9620B6 /* UIScrollViewDelegates.swift in Sources */,
+				55500A3624DCD7A35F69C261FD9BD39D /* UserInteractionFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99605535EA20BE43DC22E92E70EFE51E /* Sources */ = {
+		97546F9B2ABCD95EEF3FDD95A8D634CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4A208024E68AFBFF1ADA1DFF169A419 /* Pods-ModuleAgandaUITests-dummy.m in Sources */,
+				201DF9CD39797CFA764621028670265E /* AllDayEventView.swift in Sources */,
+				F497F7388E31145CBF6B4DC15941F8FF /* Calendar+Extension.swift in Sources */,
+				BDFC91D6CC4D87A97D8CE370307C420B /* CalendarView.swift in Sources */,
+				102BD5D98CB13D3A2E9B25534EC1FAFD /* Date+Extension.swift in Sources */,
+				87D3B121D7ED8EF5646CD51E363D21E0 /* DayData.swift in Sources */,
+				7D3817CBE91BDC372D7CD49301A7CB88 /* DayViewCalendar.swift in Sources */,
+				D6E7C024AFB03C863BE3DB42B98C9B11 /* EventPageView.swift in Sources */,
+				C7D6CA4B206C549F3B4C6C44F26B9BBB /* KVKCalendar-dummy.m in Sources */,
+				16BA0B74C491099680AD6262DFFE300F /* MonthCollectionViewCell.swift in Sources */,
+				59596AF3755EFA6C1C07311234635D30 /* MonthData.swift in Sources */,
+				ABA1D42F31D30FA0E3AEF85871468D20 /* MonthViewCalendar.swift in Sources */,
+				72639E29B003A63060B2968FCEEED60E /* ScrollDayHeaderView.swift in Sources */,
+				B08A757758278DDD298B13C9691D4821 /* ScrollHeaderDayCollectionViewCell.swift in Sources */,
+				B44B02C5E38C0303B0B78B4C07A8DE2E /* Style.swift in Sources */,
+				288787D082A539320E6986077D7F17B5 /* TimelineLabel.swift in Sources */,
+				5FF04B0165B6903D699F7F19FEF1E0FD /* TimelineView.swift in Sources */,
+				5077B36411EF3B34A7366A97ED70FE7F /* WeekData.swift in Sources */,
+				DF2680AD0DDF5BDFDAA4C1331AE8A198 /* WeekHeaderView.swift in Sources */,
+				6955B7EDCCD3AF2764ED80BE23E2C94E /* WeekViewCalendar.swift in Sources */,
+				75DC0710C3C2E2F96018FA804DE77C88 /* YearCollectionViewCell.swift in Sources */,
+				C4BC029C181474D7E044438EE40B34C7 /* YearData.swift in Sources */,
+				E5AB6B18086CE4068CE2EB914AAC2424 /* YearHeaderView.swift in Sources */,
+				45E9B7BBD9B14661523EAA3EE80B811A /* YearViewCalendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C361F2A55AB0D035083B45BDD1F71983 /* Sources */ = {
+		CB42C48D4124E74531E5DD09F9AB9858 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A441B5230F9AFBB5D54E43897960334 /* Pods-ModuleAgandaTests-dummy.m in Sources */,
+				3541FB47291ABF24ACF938C7E13B87E8 /* Pods-ModuleAganda-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0F43F75D6E5C57DE2A4FBDCD5738114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E17ED13B783FCD27D4BF3BA8003636 /* Pods-ModuleAgandaUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0780FF43273623B3A06EC4ADF3D25E06 /* PBXTargetDependency */ = {
+		3F581CC47F899CCAB505EF3C9CF6030A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVKCalendar;
+			target = 7C8627CB6D8E7BCF51A7504F548575BC /* KVKCalendar */;
+			targetProxy = 5FAE9F9CC8815E76C2645A83DD58E47B /* PBXContainerItemProxy */;
+		};
+		C5F2F128106501206E73216A6C3AE9EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ModuleAganda";
-			target = CD3356C81132A4C3304FBB4085F56C13 /* Pods-ModuleAganda */;
-			targetProxy = D0739BE89E744DF26AFCD33EEB23CC7E /* PBXContainerItemProxy */;
+			target = 4CE04C22EE3C92D33774211CCEF46BDF /* Pods-ModuleAganda */;
+			targetProxy = ED09B4D698A63EE99AA3C729AD98EB88 /* PBXContainerItemProxy */;
 		};
-		BD08691EB404C41102DEF74D94FE9BAC /* PBXTargetDependency */ = {
+		E406706FF8F6F7064AC0A9AE2872D3F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ModuleAganda";
-			target = CD3356C81132A4C3304FBB4085F56C13 /* Pods-ModuleAganda */;
-			targetProxy = F8850581C8A937A2BB952DF9CC75F764 /* PBXContainerItemProxy */;
+			target = 4CE04C22EE3C92D33774211CCEF46BDF /* Pods-ModuleAganda */;
+			targetProxy = 34B61B003BD0B0C44CDC09F534AD1960 /* PBXContainerItemProxy */;
 		};
-		EC50266AA74425F13E9FE5873EDB0B8F /* PBXTargetDependency */ = {
+		F56137200FAD44EB3946209810E75D1E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JTAppleCalendar;
-			target = 4D5B8B1BE64F80268007C79821DDDC20 /* JTAppleCalendar */;
-			targetProxy = 343D37A376F3F80B1D55FE9BB16582EA /* PBXContainerItemProxy */;
+			target = 421B6ABF460857FE6CA2905EFB5A4F74 /* JTAppleCalendar */;
+			targetProxy = 2E3B2644E43D87E721FA79B6C96FDE5E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -550,8 +762,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -570,15 +780,56 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		57AC9743841DE27D298407FFC8EFF463 /* Debug */ = {
+		31F3AD9839D599830F181260E45C7E62 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BEE123C421F9F17CEC8B1A0DD2A8191 /* JTAppleCalendar.xcconfig */;
+			baseConfigurationReference = FE18A89CD206FC6BCFCB103DA63ED34F /* KVKCalendar.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KVKCalendar/KVKCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVKCalendar/KVKCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KVKCalendar/KVKCalendar.modulemap";
+				PRODUCT_MODULE_NAME = KVKCalendar;
+				PRODUCT_NAME = KVKCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A6C465625131DEF3A7ACF3354B0AFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17702E7D3CEB32553B889BBA306E5E5 /* JTAppleCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -590,17 +841,20 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
 				PRODUCT_MODULE_NAME = JTAppleCalendar;
 				PRODUCT_NAME = JTAppleCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -608,9 +862,9 @@
 			};
 			name = Debug;
 		};
-		7BFB3366CB89D3AF97CE554421099259 /* Debug */ = {
+		7514681A3890E8A0C0E9CCCC42B4A1B3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A321822D9202BF6F82AC0BE8FFCC717 /* Pods-ModuleAgandaTests.debug.xcconfig */;
+			baseConfigurationReference = 85B7113EFEF5CB9F32C95CC84F4EC759 /* Pods-ModuleAgandaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -623,10 +877,166 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAgandaTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAgandaTests/Pods-ModuleAgandaTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAgandaTests/Pods-ModuleAgandaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89377ACBB17D661DDAA04129A3937CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17702E7D3CEB32553B889BBA306E5E5 /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				PRODUCT_MODULE_NAME = JTAppleCalendar;
+				PRODUCT_NAME = JTAppleCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8EB86AB730281450C85EA85DFACF5072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28E827C6D1522F7719EEDEB80773FFB /* Pods-ModuleAgandaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAgandaUITests/Pods-ModuleAgandaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAgandaUITests/Pods-ModuleAgandaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1B5973E5655D6A3FD644DDF19E222C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 230052D0BEC03DBC019C974DDCFCFD20 /* Pods-ModuleAganda.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D4D1E06BAD7301E4C6450EFD59396713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC0740C7EF2BEE2B37A71CC1AF44D7C /* Pods-ModuleAgandaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAgandaTests/Pods-ModuleAgandaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAgandaTests/Pods-ModuleAgandaTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -642,9 +1052,9 @@
 			};
 			name = Debug;
 		};
-		9C09C6D223893F7332F71549F1933A97 /* Debug */ = {
+		D93AA864148BF916095BB9CC33160D37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D1DEE82A0C96B930DD7489EB5DE9242 /* Pods-ModuleAganda.debug.xcconfig */;
+			baseConfigurationReference = 6574055FCBF003AC9C7795C45F74500E /* Pods-ModuleAgandaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -657,12 +1067,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAganda/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAgandaUITests/Pods-ModuleAgandaUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAgandaUITests/Pods-ModuleAgandaUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -670,15 +1084,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -710,8 +1122,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -732,19 +1142,23 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		A7C49D7B1A03565B5C29C202E9408F3A /* Release */ = {
+		E3CAD3ECC110A35C70EAEA9D51000709 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BEE123C421F9F17CEC8B1A0DD2A8191 /* JTAppleCalendar.xcconfig */;
+			baseConfigurationReference = FE18A89CD206FC6BCFCB103DA63ED34F /* KVKCalendar.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -754,98 +1168,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/KVKCalendar/KVKCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVKCalendar/KVKCalendar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
-				PRODUCT_MODULE_NAME = JTAppleCalendar;
-				PRODUCT_NAME = JTAppleCalendar;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KVKCalendar/KVKCalendar.modulemap";
+				PRODUCT_MODULE_NAME = KVKCalendar;
+				PRODUCT_NAME = KVKCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B17BAD6BEB1F98C8FD9A538A8955AC6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0948E4A158847D597F0CAC19EB0D4832 /* Pods-ModuleAgandaTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAgandaTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAgandaTests/Pods-ModuleAgandaTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DB653DD1FD8A48473D787FABF85B8CF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E6D974ECE4FE00351EF519F76CA5B86 /* Pods-ModuleAgandaUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAgandaUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAgandaUITests/Pods-ModuleAgandaUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E9F76D261AFCE43C3288994ABEDC869D /* Release */ = {
+		E541BA6168CA87C1E69CB025FD32452E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51C6EDE0AD688E9F9434EA4B516BA44D /* Pods-ModuleAgandaUITests.release.xcconfig */;
+			baseConfigurationReference = 700CFA2AA140FFA52B7A04C6C2EB7CF0 /* Pods-ModuleAganda.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -858,45 +1205,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAgandaUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAgandaUITests/Pods-ModuleAgandaUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FF30A605050F2D556C984096D1E435D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A16A7C0CC6FFADFB031E38F9C767D3F3 /* Pods-ModuleAganda.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ModuleAganda/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda.modulemap";
 				OTHER_LDFLAGS = "";
@@ -906,7 +1222,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -917,52 +1232,61 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E78F0AF2A8CFF29D1235D29F58A4E06 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */ = {
+		019D00CBA17FABECB42B8339808E41BB /* Build configuration list for PBXNativeTarget "Pods-ModuleAganda" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57AC9743841DE27D298407FFC8EFF463 /* Debug */,
-				A7C49D7B1A03565B5C29C202E9408F3A /* Release */,
+				A1B5973E5655D6A3FD644DDF19E222C8 /* Debug */,
+				E541BA6168CA87C1E69CB025FD32452E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B3739C2E087AD2837EC65BD60A0AD90 /* Build configuration list for PBXNativeTarget "Pods-ModuleAgandaUITests" */ = {
+		06B41CC7C0AE15CC04069AE20ACBB343 /* Build configuration list for PBXNativeTarget "Pods-ModuleAgandaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB653DD1FD8A48473D787FABF85B8CF8 /* Debug */,
-				E9F76D261AFCE43C3288994ABEDC869D /* Release */,
+				D4D1E06BAD7301E4C6450EFD59396713 /* Debug */,
+				7514681A3890E8A0C0E9CCCC42B4A1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		0D7F7456C2EF52B9E6D5917A92406084 /* Build configuration list for PBXNativeTarget "KVKCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
-				08638A96A528B1EC32DE62F8A728389D /* Release */,
+				E3CAD3ECC110A35C70EAEA9D51000709 /* Debug */,
+				31F3AD9839D599830F181260E45C7E62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		453C1EBBEB2FBEA43802221059BA97B7 /* Build configuration list for PBXNativeTarget "Pods-ModuleAgandaTests" */ = {
+		287DE87A54C065B5FEE94C6469D677F1 /* Build configuration list for PBXNativeTarget "Pods-ModuleAgandaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BFB3366CB89D3AF97CE554421099259 /* Debug */,
-				B17BAD6BEB1F98C8FD9A538A8955AC6D /* Release */,
+				D93AA864148BF916095BB9CC33160D37 /* Debug */,
+				8EB86AB730281450C85EA85DFACF5072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F51F81307616CE4394B349CFCF6E7347 /* Build configuration list for PBXNativeTarget "Pods-ModuleAganda" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C09C6D223893F7332F71549F1933A97 /* Debug */,
-				FF30A605050F2D556C984096D1E435D7 /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA2478573242BF77CD5FFA5E5978FCC /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6C465625131DEF3A7ACF3354B0AFCC /* Debug */,
+				89377ACBB17D661DDAA04129A3937CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

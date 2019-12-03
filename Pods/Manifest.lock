@@ -1,16 +1,20 @@
 PODS:
   - JTAppleCalendar (7.1.6)
+  - KVKCalendar (0.2.0)
 
 DEPENDENCIES:
   - JTAppleCalendar
+  - KVKCalendar
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - JTAppleCalendar
+    - KVKCalendar
 
 SPEC CHECKSUMS:
   JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
+  KVKCalendar: e995fc8c2e5317670bfc522f0f42435066e80be5
 
-PODFILE CHECKSUM: 41a635dd542090d643c4e320647b04d1ab254f41
+PODFILE CHECKSUM: 72167104f3c68df9d8cd8c0ba56820d3fa5e6600
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.7.3

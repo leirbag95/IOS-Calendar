@@ -58,19 +58,16 @@ extension CustomCellWeek : UITableViewDelegate, UITableViewDataSource {
         let strDate = formatter.string(from: date!)
         if let arrayEvent = currentEventArray[strDate] {
             let event = arrayEvent[indexPath.row]
-            cell.textLabel?.text = event.title
-            switch event.type {
-            case .autre:
+            cell.textLabel?.text = event.nomEvent
+            if event.typeEvent == TypeCalendar.autre.rawValue {
                 cell.backgroundColor = .green
-            case .ferie:
+            } else if event.typeEvent == TypeCalendar.ferie.rawValue {
                 cell.backgroundColor = .purple
-            case .outlook:
+            } else if event.typeEvent == TypeCalendar.outlook.rawValue {
                 cell.backgroundColor = .blue
-            case .calendar: break
-                //Nothing
+            } else {
+                cell.backgroundColor = UIColor(red: 91/255, green: 184/255, blue: 228/255, alpha: 1)
             }
-        } else {
-            //cell.textLabel?.text = ""
         }
         return cell
     }

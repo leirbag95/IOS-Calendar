@@ -20,7 +20,7 @@ class CustomMonthCell: JTAppleCell, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE dd MMMM"
+        formatter.dateFormat = "dd/MM/yyyy"
         let strDate = formatter.string(from: date!)
 
         if let arrayEvent = currentEventArray[strDate] {
@@ -37,25 +37,21 @@ class CustomMonthCell: JTAppleCell, UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE dd MMMM"
+        formatter.dateFormat = "dd/MM/yyyy"
         let strDate = formatter.string(from: date!)
         if let arrayEvent = currentEventArray[strDate] {
             let event = arrayEvent[indexPath.row]
-            cell.textLabel?.text = event.title
-            switch event.type {
-            case .autre:
+            cell.textLabel?.text = event.nomEvent
+            if event.typeEvent == TypeCalendar.autre.rawValue {
                 cell.backgroundColor = .green
-            case .ferie:
+            } else if event.typeEvent == TypeCalendar.ferie.rawValue {
                 cell.backgroundColor = .purple
-            case .outlook:
+            } else if event.typeEvent == TypeCalendar.outlook.rawValue {
                 cell.backgroundColor = .blue
-            case .calendar:
+            } else {
                 cell.backgroundColor = UIColor(red: 91/255, green: 184/255, blue: 228/255, alpha: 1)
             }
-        } else {
-            //cell.textLabel?.text = ""
-            print("hello")
-        }
+        } 
         return cell
     }
     

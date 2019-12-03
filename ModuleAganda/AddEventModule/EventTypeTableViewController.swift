@@ -10,14 +10,7 @@ import UIKit
 
 class EventTypeTableViewController: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    //MARK: protocol function
-    
-
-    // MARK: - Table view data source
+    // MARK: - Tableview data source
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         

@@ -3,17 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		71622FD2C4B7EA1E2E1DBFBA /* Pods_ModuleAgandaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E2A8658B36A97FDFDBF4B7 /* Pods_ModuleAgandaTests.framework */; };
-		731963732174819100D06504 /* CalendarDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731963722174819100D06504 /* CalendarDetailTableViewController.swift */; };
 		731A667A216377B2004A25DC /* CalendarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A6679216377B2004A25DC /* CalendarMonthView.swift */; };
 		731A667C21637B5C004A25DC /* CustomMonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A667B21637B5C004A25DC /* CustomMonthCell.swift */; };
 		731A66802163ACF0004A25DC /* CalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A667F2163ACF0004A25DC /* CalendarWeekView.swift */; };
 		731A66822163ACFB004A25DC /* CustomCellWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A66812163ACFB004A25DC /* CustomCellWeek.swift */; };
-		7333DD8B216C93C800477D99 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333DD8A216C93C800477D99 /* Event.swift */; };
+		7333DD8B216C93C800477D99 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333DD8A216C93C800477D99 /* CalendarEvent.swift */; };
 		7333DD8D216CB20600477D99 /* CurrentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333DD8C216CB20600477D99 /* CurrentValue.swift */; };
 		73386857216B472A0057A546 /* CalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73386856216B472A0057A546 /* CalendarDayView.swift */; };
 		734B43C12181AFD900C9A948 /* EventTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734B43C02181AFD900C9A948 /* EventTypeTableViewController.swift */; };
@@ -25,7 +24,6 @@
 		7351C55521636FC5005825AC /* ModuleAgandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C55421636FC5005825AC /* ModuleAgandaTests.swift */; };
 		7351C56021636FC5005825AC /* ModuleAgandaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351C55F21636FC5005825AC /* ModuleAgandaUITests.swift */; };
 		73870753216B68840033181B /* AddEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73870752216B68840033181B /* AddEventTableViewController.swift */; };
-		7387075C216BA0D70033181B /* CustomDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387075B216BA0D70033181B /* CustomDayCell.swift */; };
 		86E57E6B56B946DACD065FC6 /* Pods_ModuleAganda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3736A6FF66B0B12EAA73FAF /* Pods_ModuleAganda.framework */; };
 		AFA011E33AD2A3899F2B07F4 /* Pods_ModuleAgandaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C641C7337B253B921594E25 /* Pods_ModuleAgandaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -50,12 +48,11 @@
 /* Begin PBXFileReference section */
 		11901FFD056B8BB6B42A08E2 /* Pods-ModuleAganda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAganda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda.debug.xcconfig"; sourceTree = "<group>"; };
 		417544A9BBC587A268B41FBB /* Pods-ModuleAgandaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAgandaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAgandaTests/Pods-ModuleAgandaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		731963722174819100D06504 /* CalendarDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDetailTableViewController.swift; sourceTree = "<group>"; };
 		731A6679216377B2004A25DC /* CalendarMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonthView.swift; sourceTree = "<group>"; };
 		731A667B21637B5C004A25DC /* CustomMonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMonthCell.swift; sourceTree = "<group>"; };
 		731A667F2163ACF0004A25DC /* CalendarWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWeekView.swift; sourceTree = "<group>"; };
 		731A66812163ACFB004A25DC /* CustomCellWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellWeek.swift; sourceTree = "<group>"; };
-		7333DD8A216C93C800477D99 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7333DD8A216C93C800477D99 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
 		7333DD8C216CB20600477D99 /* CurrentValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValue.swift; sourceTree = "<group>"; };
 		73386856216B472A0057A546 /* CalendarDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayView.swift; sourceTree = "<group>"; };
 		734B43C02181AFD900C9A948 /* EventTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeTableViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +70,6 @@
 		7351C55F21636FC5005825AC /* ModuleAgandaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAgandaUITests.swift; sourceTree = "<group>"; };
 		7351C56121636FC5005825AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73870752216B68840033181B /* AddEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventTableViewController.swift; sourceTree = "<group>"; };
-		7387075B216BA0D70033181B /* CustomDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDayCell.swift; sourceTree = "<group>"; };
 		7C641C7337B253B921594E25 /* Pods_ModuleAgandaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleAgandaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E2A8658B36A97FDFDBF4B7 /* Pods_ModuleAgandaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleAgandaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CC6EA413B438EC8532AD7F /* Pods-ModuleAgandaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleAgandaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleAgandaUITests/Pods-ModuleAgandaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,10 +135,18 @@
 			path = Week;
 			sourceTree = "<group>";
 		};
+		7324009C2371DC450054259B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7333DD8C216CB20600477D99 /* CurrentValue.swift */,
+				7333DD8A216C93C800477D99 /* CalendarEvent.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		73386855216B47090057A546 /* Day */ = {
 			isa = PBXGroup;
 			children = (
-				73870754216B80BC0033181B /* Model */,
 				73386856216B472A0057A546 /* CalendarDayView.swift */,
 			);
 			path = Day;
@@ -182,9 +186,8 @@
 		7351C53E21636FC4005825AC /* ModuleAganda */ = {
 			isa = PBXGroup;
 			children = (
+				7324009C2371DC450054259B /* Utilities */,
 				734B43BF2181AFBC00C9A948 /* AddEventModule */,
-				7333DD8C216CB20600477D99 /* CurrentValue.swift */,
-				7333DD8A216C93C800477D99 /* Event.swift */,
 				731A667D21637B67004A25DC /* Month */,
 				73386855216B47090057A546 /* Day */,
 				731A667E2163AC7D004A25DC /* Week */,
@@ -214,15 +217,6 @@
 				7351C56121636FC5005825AC /* Info.plist */,
 			);
 			path = ModuleAgandaUITests;
-			sourceTree = "<group>";
-		};
-		73870754216B80BC0033181B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7387075B216BA0D70033181B /* CustomDayCell.swift */,
-				731963722174819100D06504 /* CalendarDetailTableViewController.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		9659D3507D96AEEADCA58EFA /* Pods */ = {
@@ -410,17 +404,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ModuleAganda/Pods-ModuleAganda-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A0B5CF84CB2FDE459F4B442B /* [CP] Check Pods Manifest.lock */ = {
@@ -451,15 +444,13 @@
 				734B43C12181AFD900C9A948 /* EventTypeTableViewController.swift in Sources */,
 				73386857216B472A0057A546 /* CalendarDayView.swift in Sources */,
 				731A66802163ACF0004A25DC /* CalendarWeekView.swift in Sources */,
-				731963732174819100D06504 /* CalendarDetailTableViewController.swift in Sources */,
 				73870753216B68840033181B /* AddEventTableViewController.swift in Sources */,
 				731A667A216377B2004A25DC /* CalendarMonthView.swift in Sources */,
-				7333DD8B216C93C800477D99 /* Event.swift in Sources */,
+				7333DD8B216C93C800477D99 /* CalendarEvent.swift in Sources */,
 				7333DD8D216CB20600477D99 /* CurrentValue.swift in Sources */,
 				7351C54221636FC4005825AC /* AgendaViewController.swift in Sources */,
 				731A667C21637B5C004A25DC /* CustomMonthCell.swift in Sources */,
 				731A66822163ACFB004A25DC /* CustomCellWeek.swift in Sources */,
-				7387075C216BA0D70033181B /* CustomDayCell.swift in Sources */,
 				7351C54021636FC4005825AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,7 +628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26WA6269DM;
+				DEVELOPMENT_TEAM = YL6SCU4H3G;
 				INFOPLIST_FILE = ModuleAganda/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -657,7 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26WA6269DM;
+				DEVELOPMENT_TEAM = YL6SCU4H3G;
 				INFOPLIST_FILE = ModuleAganda/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

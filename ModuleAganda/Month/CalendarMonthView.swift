@@ -39,7 +39,7 @@ class CalendarMonthView: UIViewController {
      Initialisation du calendrier pour le segment 'semaine'
      */
     private func initJTAppleCalendar(_ calendar:JTAppleCalendarView) {
-        calendar.scrollDirection = .horizontal
+        calendar.scrollDirection = .vertical
         calendar.scrollToDate(Date())
         calendar.minimumLineSpacing = 0
         calendar.minimumInteritemSpacing = 0
@@ -100,15 +100,11 @@ extension CalendarMonthView : JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
         vc.day_view.isHidden = false
         
         let vday = vc.children[0] as! CalendarDayView
-        formatter.dateFormat = "EEEE-dd-MMMM yyyy"
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
         var currentDate = formatter.string(from: date)
         vday.currentDate = date
-        vday.labelDayName.text = currentDate.components(separatedBy: "-").first
-        vday.labelDayNumber.text = currentDate.components(separatedBy: "-")[1]
-        vday.labelYear.text = currentDate.components(separatedBy: "-")[2]
-        
-        
-        vday.initialiseArrayByIndex(currentEventArray)
+        vday.currentDate = date
+        vday.calendarView.scrollToDate(date: date)
     }
     
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
